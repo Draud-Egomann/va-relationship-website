@@ -1,0 +1,35 @@
+{
+  /*
+   * editor
+   */
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  /*
+   * explorer
+   */
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, node_modules",
+    "tsconfig.json": "tsconfig.*.json",
+    "webpack.config.js": "webpack.config.*.js",
+    "*.vue": "${basename}s.vue"
+  },
+  "files.exclude": {
+    "**/.*": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.vscode": true,
+    "**/server": true,
+    "LICENSE": true
+  },
+  "cSpell.words": [
+    "Cacheable",
+    "composables",
+    "gsap",
+    "hoverable",
+    "pinia"
+  ]
+}
