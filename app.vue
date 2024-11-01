@@ -9,5 +9,6 @@
     <HeroBanner />
 
     <Main1 />
+    <Main2 />
   </div>
 </template>
