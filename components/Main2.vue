@@ -10,7 +10,7 @@ function setActiveTimeline(blog) {
 }
 
 function prevTimeline() {
-  const currentIndex = props.blogs.indexOf(selectedBlog.value)
+  const currentIndex = props.blogs.findIndex(blog => blog.Date === selectedBlog.value.Date)
   const prevIndex = currentIndex - 1
   if (prevIndex >= 0) {
     selectedBlog.value = props.blogs[prevIndex]
@@ -18,7 +18,7 @@ function prevTimeline() {
 }
 
 function nextTimeline() {
-  const currentIndex = props.blogs.indexOf(selectedBlog.value)
+  const currentIndex = props.blogs.findIndex(blog => blog.Date === selectedBlog.value.Date)
   const nextIndex = currentIndex + 1
   if (nextIndex < props.blogs.length) {
     selectedBlog.value = props.blogs[nextIndex]
@@ -34,8 +34,8 @@ function nextTimeline() {
       </button>
 
       <div class="flex items-center space-x-4">
-        <button v-for="blog in props.blogs" :key="blog.date" :class="{ 'active': selectedBlog == blog }"
-          @click="setActiveTimeline(blog)" class="text-gray-400">
+        <button v-for="blog in props.blogs" :key="blog.Date" :class="{ 'active': selectedBlog.Date == blog.Date }"
+          @click="setActiveTimeline(blog)" class="text-gray-400 hover:text-black">
           {{ blog.FormattedDate }}
         </button>
       </div>
