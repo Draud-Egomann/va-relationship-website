@@ -30,6 +30,8 @@ export default {
         neutral2: "#141A22",
         special1: "#FFA500",
         special2: "#FFD700",
+        gray1: "#9ca3af",
+        gray2: "#4b5563",
 
         // Dark
         darkPrimary1Dark: "#0077E5",

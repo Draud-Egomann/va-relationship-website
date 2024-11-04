@@ -9,8 +9,8 @@ defineProps<{
 <template>
   <div class="max-w-6xl mx-auto p-8">
     <div class="text-center mb-8">
-      <h2 class="text-3xl font-bold">{{ title }}</h2>
-      <p class="text-gray-600">{{ text }}</p>
+      <h2 class="text-neutral2 dark:text-darkNeutral2 text-3xl font-bold">{{ title }}</h2>
+      <p class="text-gray2 dark:text-gray1">{{ text }}</p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
