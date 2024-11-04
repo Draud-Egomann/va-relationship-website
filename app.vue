@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const blogEntries = DataProvider.GetBlogEntries();
+const heading = DataProvider.GetMainHeading();
+const cards = DataProvider.GetCards();
 </script>
 
 <template>
@@ -12,7 +14,7 @@ const blogEntries = DataProvider.GetBlogEntries();
 
     <HeroBanner />
 
-    <Main1 />
+    <Main1 :title="heading[0]" :text="heading[1]" :cards="cards" />
     <Main2 :blogs="blogEntries" />
   </div>
 </template>

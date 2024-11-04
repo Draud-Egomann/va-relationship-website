@@ -14,7 +14,7 @@ export class BlogEntry extends ImageBaseItem {
     primaryLink: string | null,
     secondaryLink: string | null,
     imageUrl: string | null = null,
-    imageAltText: string | null = null,
+    imageAltText: string = "",
     imageClass: string | null = null,
     thumbnailUrl: string | null = null,
     thumbnailAltText: string | null = null,

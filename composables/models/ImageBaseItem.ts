@@ -1,6 +1,6 @@
 export class ImageBaseItem {
   public ImageUrl: string | null;
-  public ImageAltText: string | null;
+  public ImageAltText: string;
   public ImageClass: string | null;
   public ThumbnailUrl: string | null;
   public ThumbnailAltText: string | null;
@@ -8,7 +8,7 @@ export class ImageBaseItem {
 
   constructor(
     imageUrl: string | null,
-    imageAltText: string | null = null,
+    imageAltText: string = "",
     imageClass: string | null = null,
     thumbnailUrl: string | null = null,
     thumbnailAltText: string | null = null,
