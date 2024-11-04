@@ -17,6 +17,7 @@ const cards = DataProvider.GetCards();
       
       <Main1 :title="heading[0]" :text="heading[1]" :cards="cards" />
       <Main2 :blogs="blogEntries" />
+      <Main3 />
     </div>
   </div>
 </template>
