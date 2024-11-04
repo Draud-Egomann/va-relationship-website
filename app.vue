@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const blogEntries = DataProvider.GetBlogEntries();
+</script>
+
 <template>
   <div>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,6 +13,6 @@
     <HeroBanner />
 
     <Main1 />
-    <Main2 />
+    <Main2 :blogs="blogEntries" />
   </div>
 </template>
