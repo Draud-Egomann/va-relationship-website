@@ -1,4 +1,9 @@
 <script setup lang="ts">
+defineProps<{
+  reverse?: boolean
+}>()
+
+
 const items = ref([
   {
     title: 'Heading 1',
@@ -30,7 +35,7 @@ function startAutoRotate() {
 
 <template>
   <div class="max-w-6xl mx-auto p-8">
-    <div class="flex justify-center gap-16">
+    <div class="flex justify-center gap-16" :class="{ 'flex-row-reverse': reverse }">
 
       <div class="w-1/2">
         <img src="https://picsum.photos/150" alt="Placeholder Image"

@@ -5,7 +5,7 @@ const cards = DataProvider.GetCards();
 </script>
 
 <template>
-  <div>
+  <div class="dark">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -23,6 +23,7 @@ const cards = DataProvider.GetCards();
       <Main5 />
       <Main6 />
       <Main7 />
+      <Main6 :reverse="true" />
       <Main8 />
     </div>
   </div>
