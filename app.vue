@@ -22,6 +22,8 @@ const cards = DataProvider.GetCards();
       <Main4 />
       <Main5 />
       <Main6 />
+      <Main7 />
+      <Main8 />
     </div>
   </div>
 </template>
