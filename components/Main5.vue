@@ -1,13 +1,9 @@
 <template>
   <div class="max-w-6xl mx-auto p-8">
     <div class="py-24 text-center">
-      <h2 class="text-neutral2 dark:text-darkNeutral2 my-8">
-        heading 2
-      </h2>
-      <p class="text-neutral2 dark:text-gray1 w-3/4 mx-auto">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eum laboriosam nisi et, alias culpa officia
-        neque omnis facilis impedit hic maiores rem temporibus quaerat quia corrupti ullam ad ipsam.
-      </p>
+      <Heading :heading-type="2" :title="'Heading 2'"
+        :text="' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eum laboriosam nisi et, alias culpa officia.'"
+        :text-reduced-size="true" />
     </div>
 
     <!-- video container -->

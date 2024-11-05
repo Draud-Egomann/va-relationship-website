@@ -8,7 +8,6 @@ defineProps<{
   <div class="text-center">
     <img :src="card.ImageUrl" :alt="card.ImageAltText" :class="card.ImageClass"
       class="mx-auto rounded-full w-20 h-20 mb-4" />
-    <h3 class="text-neutral2 dark:text-darkNeutral2 text-xl font-semibold">{{ card.Title }}</h3>
-    <p class="text-gray2 dark:text-gray1">{{ card.Text }}</p>
+    <Heading :heading-type="6" :title="card.Title" :text="card.Text" />
   </div>
 </template>

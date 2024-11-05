@@ -50,12 +50,7 @@ function nextTimeline() {
         <p class="text-gray2 dark:text-gray1 mb-2">
           {{ selectedBlog.FormattedDate }}
         </p>
-        <h3 class="text-neutral2 dark:text-darkNeutral2 text-2xl font-bold mb-4">
-          {{ selectedBlog.Title }}
-        </h3>
-        <p class="text-gray2 dark:text-gray1 mb-6">
-          {{ selectedBlog.Text }}
-        </p>
+        <Heading :headingType="4" :title="selectedBlog.Title" :text="selectedBlog.Text" />
 
         <div class="space-x-4">
           <button v-if="selectedBlog.HasPrimaryLink" class="bg-primary1 dark:bg-darkPrimary1Dark text-neutral1 px-4 py-2 rounded">

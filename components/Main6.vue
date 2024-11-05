@@ -33,7 +33,8 @@ function startAutoRotate() {
     <div class="flex justify-center gap-16">
 
       <div class="w-1/2">
-        <img src="https://picsum.photos/150" alt="Placeholder Image" class="w-full transition duration-500 ease-in-out" />
+        <img src="https://picsum.photos/150" alt="Placeholder Image"
+          class="w-full transition duration-500 ease-in-out" />
       </div>
 
       <div class="w-1/2 flex flex-col justify-top">
