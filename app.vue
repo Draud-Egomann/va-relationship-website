@@ -5,7 +5,7 @@ const cards = DataProvider.GetCards();
 </script>
 
 <template>
-  <div class="dark">
+  <div>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -13,6 +13,7 @@ const cards = DataProvider.GetCards();
       rel="stylesheet">
 
     <div class="bg-neutral1 dark:bg-darkNeutral1">
+      <ToggleDarkMode />
       <HeroBanner :heading-type="1" :title="'Heading 1'"
         :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'" />
 
