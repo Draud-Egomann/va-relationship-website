@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
+const plugin = require('tailwindcss/plugin');
 
 export default {
   darkMode: 'selector',
@@ -18,6 +19,13 @@ export default {
   ],
   theme: {
     extend: {
+      // https://www.hyperui.dev/blog/text-shadow-with-tailwindcss
+      textShadow: {
+        sm: '0 1px 2px var(--tw-shadow-color)',
+        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+        lg: '0 8px 16px var(--tw-shadow-color)',
+        outline: '2px 2px 0 var(--tw-shadow-color), 2px -2px 0 var(--tw-shadow-color), -2px 2px 0 var(--tw-shadow-color), -2px -2px 0 var(--tw-shadow-color), 2px 0px 0 var(--tw-shadow-color), 0px 2px 0 var(--tw-shadow-color), -2px 0px 0 var(--tw-shadow-color), 0px -2px 0 var(--tw-shadow-color), 2px 2px 20px rgba(255, 165, 0, 0)',
+      },
       colors: {
         // Light
         primary1: "#0060B9",
@@ -50,5 +58,16 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') },
+      )
+    }),
+  ],
 }

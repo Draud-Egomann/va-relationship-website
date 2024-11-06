@@ -11,7 +11,7 @@
 
     <!-- Text Content -->
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-      <h1 class="text-neutral1 text-3xl lg:text-5xl font-bold mb-4">Engaging Video Banner Title</h1>
+      <h2 class="text-neutral1 text-3xl lg:text-5xl font-bold mb-4">Engaging Video Banner Title</h2>
       <p class="text-neutral1 text-lg lg:text-xl max-w-2xl mb-6">
         Brief description that aligns with the website's message, adding more context or information.
       </p>
