@@ -25,6 +25,7 @@ const cards = DataProvider.GetCards();
       <Main7 />
       <Main6 :reverse="true" />
       <Main8 />
+      <Main9 />
     </div>
   </div>
 </template>
