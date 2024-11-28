@@ -7,10 +7,12 @@ namespace Web.Controllers
     [Route("")]
     public class AppController : Controller
     {
-        [Authorize]
         public IActionResult Index()
         {
-            return PhysicalFile("VueApp/dist/index.html", "text/html");
+            var contenType = "text/html";
+
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "VueApp", "dist", "index.html");
+            return PhysicalFile(filePath, contenType);
         }
     }
 }

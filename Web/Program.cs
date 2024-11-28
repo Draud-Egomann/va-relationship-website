@@ -1,4 +1,10 @@
+using Microsoft.AspNetCore.SpaServices.AngularCli;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSpaStaticFiles(configuration =>
+{
+    configuration.RootPath = "VueApp/dist";
+});
 
 // Add services to the container.
 
@@ -22,6 +28,13 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
 }
+
+app.UseStaticFiles();
+
+app.UseSpa(spa =>
+{
+    spa.Options.SourcePath = "VueApp";
+});
 
 app.UseHttpsRedirection();
 
