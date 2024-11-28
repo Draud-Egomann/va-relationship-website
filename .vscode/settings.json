@@ -10,9 +10,11 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "package.json": "package-lock.json, yarn.lock, node_modules",
+    "appsettings.json": "appsettings.Development.json",
     "tsconfig.json": "tsconfig.*.json",
     "webpack.config.js": "webpack.config.*.js",
-    "*.vue": "${basename}s.vue"
+    "*.vue": "${basename}s.vue",
+    "*.cshtml": "*cshtml.cs"
   },
   "files.exclude": {
     "**/.*": true,
