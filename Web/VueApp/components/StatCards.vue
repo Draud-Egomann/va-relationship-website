@@ -17,9 +17,9 @@ defineProps<{
       <Heading :headingType="2" :title="title" :text="text" />
     </div>
 
-    <div class="flex gap-4 justify-center">
+    <div class="flex flex-wrap gap-4 justify-center">
       <StatCard v-for="(item, index) in StatCards" :key="index" :heading="item.heading" :value="item.value"
-        :description="item.description" />
+        :description="item.description" class="w-full md:w-1/3 lg:w-1/4"/>
     </div>
   </div>
 </template>
