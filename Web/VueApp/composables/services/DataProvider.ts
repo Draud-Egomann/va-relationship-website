@@ -102,4 +102,12 @@ export class DataProvider {
       { title: "Accordion 3", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
     ]
   }
+
+  static GetStatCards(): { heading: string; value: string; description: string; }[] {
+    return [
+      { heading: "Stat 1", value: "100", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+      { heading: "Stat 2", value: "20/20", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+      { heading: "Stat 3", value: "300", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+    ]
+  }
 }

@@ -3,6 +3,7 @@ const blogEntries = DataProvider.GetBlogEntries();
 const heading = DataProvider.GetMainHeading();
 const cards = DataProvider.GetCards();
 const accordions = DataProvider.GetAccordions();
+const statCards = DataProvider.GetStatCards();
 </script>
 
 <template>
@@ -39,6 +40,8 @@ const accordions = DataProvider.GetAccordions();
           Eveniet quo obcaecati doloribus?
         </p>
       </Blockquote>
+      <StatCards :title="'Stat Cards'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
+        :StatCards="statCards" />
     </div>
   </div>
 </template>
