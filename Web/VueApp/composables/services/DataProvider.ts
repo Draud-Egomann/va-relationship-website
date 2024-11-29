@@ -1,5 +1,6 @@
 import { BlogEntry } from "~/composables/models/BlogEntry";
 import { Card } from "~/composables/models/Card";
+import { HorizontalCard } from "../models/HorizontalCard";
 
 export class DataProvider {
   static GetBlogEntries(): BlogEntry[] {
@@ -109,5 +110,21 @@ export class DataProvider {
       { heading: "Stat 2", value: "20/20", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
       { heading: "Stat 3", value: "300", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
     ]
+  }
+
+  static GetHorizontalCard(): HorizontalCard {
+    return new HorizontalCard(
+      "Horizontal Card",
+      "Subtitle",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Learn More",
+      "https://example.com",
+      "https://picsum.photos/200/200",
+      "image alt text",
+      null,
+      null,
+      null,
+      null
+    );
   }
 }
