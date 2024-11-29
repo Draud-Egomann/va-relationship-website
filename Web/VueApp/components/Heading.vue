@@ -16,10 +16,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1 v-if="props.headingType == 1" class="text-neutral2 dark:text-darkNeutral2 my-8">
+  <h1 v-if="props.headingType == 1" class="text-special1 dark:text-darkSpecial1Dark my-8">
     {{ title }}
   </h1>
-  <h2 v-if="props.headingType == 2" class="text-neutral2 dark:text-darkNeutral2 my-6">
+  <h2 v-if="props.headingType == 2" class="text-primary2 dark:text-darkPrimary1Dark my-6">
     {{ title }}
   </h2>
   <h3 v-if="props.headingType == 3" class="text-neutral2 dark:text-darkNeutral2 my-4">
