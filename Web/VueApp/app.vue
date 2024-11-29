@@ -32,6 +32,13 @@ const accordions = DataProvider.GetAccordions();
       <Main10 :has-keyword="false" />
       <Accordions :title="'Accordions'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
         :accordions="accordions" />
+      <Blockquote :author="'tom'">
+        <p class="font-bold text-neutral2 dark:text-darkNeutral2">
+          reiciendis. Quasi, nisi. Laudantium necessitatibus recusandae iure rem accusantium possimus minima explicabo.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, delectus ullam illo corporis dolores
+          Eveniet quo obcaecati doloribus?
+        </p>
+      </Blockquote>
     </div>
   </div>
 </template>

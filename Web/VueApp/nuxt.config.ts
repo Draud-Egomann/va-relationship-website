@@ -30,6 +30,8 @@ export default defineNuxtConfig({
         "copy",
         "link",
         "chevron-down",
+        "quote-right",
+        "quote-left",
       ],
       regular: ["user"],
     },
