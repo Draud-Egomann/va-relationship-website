@@ -8,6 +8,7 @@ Logs/
 # Generated files
 project.lock.json
 .vs/
+wwwroot/zwischen_welten
 
 # mstest test results
 TestResults
