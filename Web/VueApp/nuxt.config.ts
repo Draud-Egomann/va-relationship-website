@@ -29,6 +29,7 @@ export default defineNuxtConfig({
         "external-link-square-alt",
         "copy",
         "link",
+        "chevron-down",
       ],
       regular: ["user"],
     },

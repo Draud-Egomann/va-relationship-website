@@ -2,6 +2,7 @@
 const blogEntries = DataProvider.GetBlogEntries();
 const heading = DataProvider.GetMainHeading();
 const cards = DataProvider.GetCards();
+const accordions = DataProvider.GetAccordions();
 </script>
 
 <template>
@@ -29,6 +30,8 @@ const cards = DataProvider.GetCards();
       <Main9 />
       <Main10 :has-keyword="true" />
       <Main10 :has-keyword="false" />
+      <Accordions :title="'Accordions'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
+        :accordions="accordions" />
     </div>
   </div>
 </template>
