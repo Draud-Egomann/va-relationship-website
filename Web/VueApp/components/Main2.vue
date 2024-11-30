@@ -5,7 +5,7 @@ const props = defineProps<{
 
 let selectedBlog = ref(props.blogs[0])
 
-function setActiveTimeline(blog) {
+function setActiveTimeline(blog: BlogEntry) {
   selectedBlog.value = blog
 }
 
@@ -53,10 +53,12 @@ function nextTimeline() {
         <Heading :headingType="4" :title="selectedBlog.Title" :text="selectedBlog.Text" />
 
         <div class="space-x-4">
-          <button v-if="selectedBlog.HasPrimaryLink" class="bg-primary1 dark:bg-darkPrimary1Dark text-neutral1 px-4 py-2 rounded">
+          <button v-if="selectedBlog.HasPrimaryLink"
+            class="bg-primary1 dark:bg-darkPrimary1Dark text-neutral1 px-4 py-2 rounded">
             Primary action
           </button>
-          <button v-if="selectedBlog.HasSecondaryLink" class="border border-primary2 dark:border-darkPrimary2Dark text-primary2 dark:text-darkNeutral2 px-4 py-2 rounded">
+          <button v-if="selectedBlog.HasSecondaryLink"
+            class="border border-primary2 dark:border-darkPrimary2Dark text-primary2 dark:text-darkNeutral2 px-4 py-2 rounded">
             Secondary action
           </button>
         </div>

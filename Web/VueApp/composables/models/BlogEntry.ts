@@ -28,12 +28,8 @@ export class BlogEntry extends ImageBaseItem {
     this.SecondaryLink = secondaryLink
   }
 
-  private static DateToString(date: Date): string {
-    return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
-  }
-
   get FormattedDate(): string {
-    return BlogEntry.DateToString(this.Date);
+    return `${this.Date.getDate()}/${this.Date.getMonth() + 1}/${this.Date.getFullYear()}`;
   }
 
   get HasPrimaryLink(): boolean {
