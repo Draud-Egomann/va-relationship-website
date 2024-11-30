@@ -62,7 +62,7 @@ function nextTimeline() {
         </div>
       </div>
 
-      <div class="md:w-1/2">
+      <div class="w-full md:w-1/2">
         <img :src="selectedBlog.ImageUrl" :alt="selectedBlog.ImageAltText" :class="selectedBlog.ImageClass"
           class="w-full h-auto rounded-lg shadow-md">
       </div>
