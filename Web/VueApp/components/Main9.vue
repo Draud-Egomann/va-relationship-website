@@ -9,13 +9,13 @@ const cards = [
 
 <template>
   <div class="py-20">
-    <div class="max-w-7xl mx-auto flex">
-      <div class="w-1/2 pr-8">
+    <div class="max-w-7xl mx-auto flex flex-wrap">
+      <div class="w-full md:w-1/2 mx-auto text-center p-8 md:pr-8">
         <Heading :heading-type="3" :title="'Cards Section'"
           :text="'Here is some introductory text explaining the content of the cards. As you scroll down, youll see each card layer over the previous one, creating an overlapping visual effect.'" />
       </div>
 
-      <div class="w-1/2 space-y-6 relative">
+      <div class="w-full md:w-1/2 space-y-6 relative p-8 md:p-0">
         <div v-for="(card, index) in cards" :key="index" :style="{ top: `${index * 50}px` }"
           class="sticky p-6 rounded-lg shadow-lg bg-accent1 dark:bg-darkAccent1Dark">
           <!--  Incremental top offset for overlapping effect -->
