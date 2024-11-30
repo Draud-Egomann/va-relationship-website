@@ -34,24 +34,24 @@ const texts = [
 
 <template>
   <div class="py-20">
-    <div class="max-w-4xl mx-auto text-center mb-12">
+    <div class="max-w-4xl mx-auto text-center p-8 md:p-0 mb-12">
       <Heading :heading-type="2" :title="'Section Title'"
         :text="'Here is some introductory text for the section, giving an overview of the content below.'" />
     </div>
 
     <div class="max-w-6xl mx-auto space-y-8">
-      <div v-for="(item, index) in texts" :key="index" class="flex justify-between items-center">
+      <div v-for="(item, index) in texts" :key="index" class="flex flex-wrap justify-between items-center">
 
-        <p class="text-neutral2 dark:text-darkNeutral2 text-lg w-3/4">
+        <p class="text-neutral2 dark:text-darkNeutral2 text-lg w-full md:w-3/4 p-8 md:p-0 text-center md:text-left">
           {{ item.text }}
         </p>
 
         <span v-if="hasKeyword"
-          class="font-extrabold text-xl w-1/4 text-right text-shadow-outline shadow-special1 dark:shadow-darkSpecial1Dark">
+          class="font-extrabold text-xl w-full md:w-1/4 text-center md:text-right text-shadow-outline shadow-special1 dark:shadow-darkSpecial1Dark">
           {{ item.keyword }}
         </span>
-        <span v-else>
-          <img src="https://picsum.photos/seed/bread/500" alt="asdaslhdl" class="w-52 h-32" draggable="false" />
+        <span v-else class="w-full md:w-auto">
+          <img src="https://picsum.photos/seed/bread/500" alt="asdaslhdl" class="w-52 h-32 mx-auto" draggable="false" />
         </span>
 
       </div>
