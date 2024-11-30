@@ -3,7 +3,6 @@ defineProps<{
   reverse?: boolean
 }>()
 
-
 const items = ref([
   {
     title: 'Heading 1',
@@ -35,14 +34,14 @@ function startAutoRotate() {
 
 <template>
   <div class="max-w-6xl mx-auto p-8">
-    <div class="flex justify-center gap-16" :class="{ 'flex-row-reverse': reverse }">
+    <div class="flex flex-wrap justify-center gap-0" :class="{ 'flex-row-reverse': reverse }">
 
-      <div class="w-1/2">
+      <div class="w-full md:w-1/2">
         <img src="https://picsum.photos/150" alt="Placeholder Image"
           class="w-full transition duration-500 ease-in-out" />
       </div>
 
-      <div class="w-1/2 flex flex-col justify-top">
+      <div class="w-full md:w-1/2 flex flex-col justify-top pt-4 md:pt-0" :class="reverse ? 'md:pr-16' : 'md:pl-16'">
         <div v-for="(item, index) in items" :key="index"
           :class="['py-4 border-l-4 transition-all duration-300', currentIndex === index ? 'border-black dark:border-white' : 'border-transparent']">
           <div class="ml-4">
