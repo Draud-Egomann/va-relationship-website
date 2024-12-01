@@ -24,6 +24,8 @@ function toggleAccordion() {
         :class="{ 'rotate-180': isOpen }" />
     </button>
 
+    <div class="border-t border-gray-400/60"></div>
+
     <div v-if="isOpen" class="p-4 text-neutral2 dark:text-darkNeutral2 text-base">
       <slot />
     </div>
