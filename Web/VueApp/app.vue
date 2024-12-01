@@ -44,6 +44,7 @@ const horizontalCard = DataProvider.GetHorizontalCard();
       <StatCards :title="'Stat Cards'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
         :StatCards="statCards" />
       <HorizontalCard :horizontalCard="horizontalCard" />
+      <MainCard />
     </div>
   </div>
 </template>
