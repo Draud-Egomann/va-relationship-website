@@ -1,6 +1,7 @@
 import { BlogEntry } from "~/composables/models/BlogEntry";
 import { Card } from "~/composables/models/Card";
 import { HorizontalCard } from "../models/HorizontalCard";
+import { MainCard } from "../models/MainCard";
 
 export class DataProvider {
   static GetBlogEntries(): BlogEntry[] {
@@ -126,5 +127,46 @@ export class DataProvider {
       null,
       null
     );
+  }
+
+  static GetMainCards(): MainCard[] {
+    return [
+      new MainCard(
+        "https://example.com",
+        "Learn More",
+        "Main Card 1",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "https://picsum.photos/300/300",
+        "Placeholder Image",
+        null,
+        null,
+        null,
+        null,
+      ),
+      new MainCard(
+        "https://example.com",
+        "Learn More",
+        "Main Card 2",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "https://picsum.photos/300/300",
+        "Placeholder Image",
+        null,
+        null,
+        null,
+        null,
+      ),
+      new MainCard(
+        "https://example.com",
+        "Learn More",
+        "Main Card 3",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "https://picsum.photos/300/300",
+        "Placeholder Image",
+        null,
+        null,
+        null,
+        null,
+      ),
+    ] 
   }
 }

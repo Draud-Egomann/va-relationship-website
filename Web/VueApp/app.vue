@@ -5,6 +5,7 @@ const cards = DataProvider.GetCards();
 const accordions = DataProvider.GetAccordions();
 const statCards = DataProvider.GetStatCards();
 const horizontalCard = DataProvider.GetHorizontalCard();
+const mainCards = DataProvider.GetMainCards();
 </script>
 
 <template>
@@ -44,7 +45,8 @@ const horizontalCard = DataProvider.GetHorizontalCard();
       <StatCards :title="'Stat Cards'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
         :StatCards="statCards" />
       <HorizontalCard :horizontalCard="horizontalCard" />
-      <MainCard />
+      <MainCards :title="'Main Cards'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
+        :cards="mainCards" />
     </div>
   </div>
 </template>
