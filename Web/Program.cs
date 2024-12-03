@@ -16,6 +16,11 @@ builder.Services.AddAuthentication("CookieAuth")
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSpaStaticFiles(configuration =>
+{
+    configuration.RootPath = "VueApp/dist";
+});
+
 
 var app = builder.Build();
 
@@ -26,8 +31,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseDefaultFiles();
-app.UseStaticFiles();
+app.UseSpaStaticFiles();
+
+// uncomment when nuxt app is ready
+//app.UseSpa(spa =>
+//{
+//    spa.Options.SourcePath = "VueApp";
+//});
 
 app.UseHttpsRedirection();
 
@@ -37,6 +47,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
 app.MapFallbackToFile("/index.html");
 
 app.Run();
