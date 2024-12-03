@@ -32,10 +32,10 @@ const technologies = [
 
 <template>
   <div class="max-w-6xl mx-auto p-8">
-    <h1 class="text-2xl font-bold mb-4">Datenschutzerklärung</h1>
+    <h1 class="text-4xl font-bold mb-4">Datenschutzerklärung</h1>
     <p class="mb-4">Zuletzt aktualisiert am: 03.12.2024</p>
 
-    <h2 class="text-xl font-semibold mt-6">Kontaktinformationen</h2>
+    <h2 class="text-2xl font-semibold mt-6">Kontaktinformationen</h2>
     <p class="mb-4">
       Bei Fragen oder Anliegen zum Schutz Ihrer Daten durch uns erreichen Sie uns jederzeit per E-Mail unter
       <NuxtLink to="mailto:l1rsfg3jo@mozmail.com" class="text-blue-500 underline">
@@ -43,23 +43,23 @@ const technologies = [
       </NuxtLink>.
     </p>
 
-    <h2 class="text-xl font-semibold mt-6">Allgemeine Grundsätze</h2>
+    <h2 class="text-2xl font-semibold mt-6">Allgemeine Grundsätze</h2>
     <p class="mb-4">
       Unsere Webseite kann grundsätzlich ohne Registrierung besucht werden. Bei Ihrem Besuch erheben wir Daten nur in
       dem Umfang, wie es technisch unbedingt notwendig ist, um Ihnen unsere Webseite anzeigen zu können und die
       Stabilität und Sicherheit zu gewährleisten.
     </p>
 
-    <h2 class="text-xl font-semibold mt-6">Personenbezogene Daten</h2>
+    <h2 class="text-2xl font-semibold mt-6">Personenbezogene Daten</h2>
     <p class="mb-4">
       Personenbezogene Daten sind Informationen, die dazu genutzt werden können, Ihre Identität zu erfahren. Darunter
       fallen Informationen wie Ihr Name, Adresse, Postanschrift, Telefonnummer. Informationen, die nicht mit Ihrer
       Identität in Verbindung gebracht werden (wie zum Beispiel Anzahl der Nutzer der Seite), fallen nicht darunter.
     </p>
 
-    <h2 class="text-xl font-semibold mt-6">Welche Rechte haben Sie?</h2>
+    <h2 class="text-2xl font-semibold mt-6">Welche Rechte haben Sie?</h2>
 
-    <h3 class="text-lg font-semibold mt-4">Auskunftsrecht</h3>
+    <h3 class="text-xl font-semibold mt-4">Auskunftsrecht</h3>
     <p class="mb-4">
       Sie können jederzeit eine Auskunft über die von uns über Sie gespeicherten Daten verlangen. Wir bitten Sie, Ihr
       Auskunftsgesuch zusammen mit einem Identitätsnachweis an
@@ -100,7 +100,7 @@ const technologies = [
       informiert.
     </p>
 
-    <h3 class="text-lg font-semibold mt-4">Löschung und Berichtigung</h3>
+    <h3 class="text-xl font-semibold mt-4">Löschung und Berichtigung</h3>
     <p class="mb-4">
       Sie haben jederzeit die Möglichkeit, die Löschung oder Berichtigung Ihrer Daten zu verlangen. Wir können das
       Gesuch abweisen, wenn gesetzliche Vorschriften uns zur längeren bzw. unveränderten Aufbewahrung verpflichten
@@ -113,16 +113,16 @@ const technologies = [
       oder Kostenfolgen).
     </p>
 
-    <h2 class="text-xl font-semibold mt-6">Cookies und ähnliche Technologien</h2>
+    <h2 class="text-2xl font-semibold mt-6">Cookies und ähnliche Technologien</h2>
 
     <div v-for="technology in technologies">
-      <h3 class="text-lg font-semibold mt-4">{{ technology.name }}</h3>
+      <h3 class="text-xl font-semibold mt-4">{{ technology.name }}</h3>
       <p class="mb-4" v-for="description in technology.descriptions">
         {{ description }}
       </p>
     </div>
 
-    <h2 class="text-xl font-semibold mt-6">Links zu anderen Websites</h2>
+    <h2 class="text-2xl font-semibold mt-6">Links zu anderen Websites</h2>
     <p class="mb-4">
       Unsere Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb
       können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets
@@ -131,7 +131,7 @@ const technologies = [
       erkennbar.
     </p>
 
-    <h2 class="text-xl font-semibold mt-6">Änderungen der Datenschutzerklärung</h2>
+    <h2 class="text-2xl font-semibold mt-6">Änderungen der Datenschutzerklärung</h2>
     <p class="mb-4">
       Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen
       Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen. Für Ihren
@@ -139,3 +139,25 @@ const technologies = [
     </p>
   </div>
 </template>
+
+<style scoped>
+h1,
+h2,
+h3,
+ul,
+p {
+  @apply text-neutral2 dark:text-darkNeutral2;
+}
+
+h1 {
+  @apply dark:text-darkSpecial1Dark
+}
+
+h2 {
+  @apply dark:text-darkPrimary1Dark;
+}
+
+h3 {
+  @apply dark:text-darkPrimary1Dark;
+}
+</style>
