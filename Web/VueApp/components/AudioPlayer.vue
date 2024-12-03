@@ -1,0 +1,65 @@
+<template>
+  <div class="max-w-6xl mx-auto p-8">
+    <div
+      class="bg-accent2 border-slate-100 dark:bg-darkAccent2Dark dark:border-slate-500 border-b rounded-t-xl p-4 pb-6 sm:p-10 sm:pb-8 lg:p-6 xl:p-10 xl:pb-8 space-y-6 sm:space-y-8 lg:space-y-6 xl:space-y-8 items-center">
+      <div class="flex items-center space-x-4">
+        <img
+          src="https://img.freepik.com/free-psd/square-flyer-template-maximalist-business_23-2148524497.jpg?w=1800&t=st=1699458420~exp=1699459020~hmac=5b00d72d6983d04966cc08ccd0fc1f80ad0d7ba75ec20316660e11efd18133cd"
+          alt="" width="88" height="88" class="flex-none rounded-lg bg-slate-100" loading="lazy" />
+
+        <div class="min-w-0 flex-auto space-y-1 font-semibold">
+          <h3 class="text-neutral2/75 dark:text-neutral1 text-sm leading-6 truncate">
+            Music: New Album The Lorem
+          </h3>
+
+          <p class="text-neutral2 dark:text-neutral1 text-lg">
+            Spotisimo
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <div class="relative">
+          <div class="bg-neutral1 dark:bg-darkAccent1Dark rounded-full overflow-hidden">
+            <div class="bg-special1 dark:bg-darkSpecial1Dark w-1/2 h-2" role="progressbar" aria-label="music progress"
+              aria-valuenow="1456" aria-valuemin="0" aria-valuemax="4550"></div>
+          </div>
+          <div
+            class="ring-special2 dark:ring-special1 ring-2 absolute left-1/2 top-1/2 w-4 h-4 -mt-2 -ml-2 flex items-center justify-center bg-white rounded-full shadow">
+            <div
+              class="w-1.5 h-1.5 bg-special1 dark:bg-darkSpecial1Dark rounded-full ring-1 ring-inset ring-slate-900/5">
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between text-sm leading-6 font-medium tabular-nums">
+          <div class="text-base text-neutral2 dark:text-neutral1">1:75</div>
+          <div class="text-base text-neutral2 dark:text-neutral1">3:20</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-secondary2 dark:bg-darkAccent1Dark rounded-b-xl flex items-center">
+      <div class="flex-auto flex items-center justify-evenly">
+        <button type="button" aria-label="Rewind 10 seconds">
+          <fa-icon :icon="['fas', 'backward-step']"
+            class="text-2xl text-neutral2 dark:text-neutral1"
+            aria-label="Rewind 10 seconds" />
+        </button>
+      </div>
+
+      <button type="button"
+        class="bg-neutral1 text-neutral2 dark:bg-slate-100 flex-none -my-2 mx-auto w-20 h-20 rounded-full ring-1 ring-slate-900/5 shadow-md flex items-center justify-center"
+        aria-label="Pause">
+        <fa-icon :icon="['fas', 'pause']" class="text-4xl text-neutral2" aria-label="Pause" />
+      </button>
+
+      <div class="flex-auto flex items-center justify-evenly">
+        <button type="button" aria-label="Skip 10 seconds">
+          <fa-icon :icon="['fas', 'forward-step']"
+            class="text-2xl text-neutral2 dark:text-neutral1"
+            aria-label="Skip 10 seconds" />
+        </button>
+      </div>
+    </div>
+  </div>
+</template>

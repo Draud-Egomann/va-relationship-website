@@ -40,4 +40,5 @@ const mainCards = DataProvider.GetMainCards();
   <HorizontalCard :horizontalCard="horizontalCard" />
   <MainCards :title="'Main Cards'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
     :cards="mainCards" />
+  <AudioPlayer />
 </template>
