@@ -1,22 +1,7 @@
 <script setup lang="ts">
-// https://tailwindcss.com/docs/dark-mode
-const isDarkMode = ref(false)
+import { useDarkModeStore } from "~/store/DarkModeStore"
 
-onMounted(() => {
-  // Default to dark mode if no preference is stored in localStorage
-  const prefersDarkMode = !('theme' in localStorage) || localStorage.theme === 'dark' || window.matchMedia('(prefers-color-scheme: dark)').matches
-
-  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-  document.documentElement.classList.toggle('dark', prefersDarkMode)
-  localStorage.theme = prefersDarkMode ? 'dark' : 'light'
-
-  isDarkMode.value = document.documentElement.classList.contains('dark')
-})
-
-function toggleDarkMode() {
-  document.documentElement.classList.toggle('dark', isDarkMode.value)
-  localStorage.theme = isDarkMode.value ? 'dark' : 'light'
-}
+const darkModeStore = useDarkModeStore()
 </script>
 
 <template>
@@ -27,7 +12,7 @@ function toggleDarkMode() {
 
     <!-- Toggle Switch -->
     <label class="relative inline-flex items-center cursor-pointer">
-      <input type="checkbox" v-model="isDarkMode" @change="toggleDarkMode" class="sr-only peer">
+      <input type="checkbox" v-model="darkModeStore.isDarkMode" @change="darkModeStore.toggleDarkMode" class="sr-only peer">
       <div
         class="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:bg-primary1 dark:peer-checked:bg-darkPrimary1Dark transition duration-300">
       </div>

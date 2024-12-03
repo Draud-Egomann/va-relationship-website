@@ -1,3 +1,13 @@
+<script setup lang="ts">
+import { useDarkModeStore } from "~/store/DarkModeStore"
+
+const darkModeStore = useDarkModeStore()
+
+onMounted(() => {
+  darkModeStore.onLoad()
+})
+</script>
+
 <template>
   <div>
     <link rel="preconnect" href="https://fonts.googleapis.com">
