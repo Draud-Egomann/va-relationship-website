@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     dirs: ["composables/**"],
   },
 
-  modules: ['@vesp/nuxt-fontawesome', '@nuxtjs/tailwindcss'],
+  modules: ['@vesp/nuxt-fontawesome', '@nuxtjs/tailwindcss', '@pinia/nuxt'],
 
   // https://nuxt.com/modules/nuxt-fontawesome
   fontawesome: {
