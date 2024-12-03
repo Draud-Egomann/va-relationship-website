@@ -33,6 +33,8 @@ export default defineNuxtConfig({
         "chevron-down",
         "quote-right",
         "quote-left",
+        "eye",
+        "eye-slash",
       ],
       regular: ["user"],
     },
