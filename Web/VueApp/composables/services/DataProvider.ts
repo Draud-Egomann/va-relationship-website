@@ -2,6 +2,7 @@ import { BlogEntry } from "~/composables/models/BlogEntry";
 import { Card } from "~/composables/models/Card";
 import { HorizontalCard } from "../models/HorizontalCard";
 import { MainCard } from "../models/MainCard";
+import { Slide } from "../models/Slide";
 
 export class DataProvider {
   static GetBlogEntries(): BlogEntry[] {
@@ -167,6 +168,14 @@ export class DataProvider {
         null,
         null,
       ),
-    ] 
+    ]
+  }
+
+  static GetSlides(): Slide[] {
+    return [
+      new Slide("First Slide", "https://picsum.photos/600", "Slide 1"),
+      new Slide("Second Slide", "https://picsum.photos/600", "Slide 2"),
+      new Slide(null, "https://picsum.photos/600", "Slide 3"),
+    ]
   }
 }

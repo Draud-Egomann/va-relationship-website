@@ -31,6 +31,8 @@ export default defineNuxtConfig({
         "copy",
         "link",
         "chevron-down",
+        "chevron-left",
+        "chevron-right",
         "quote-right",
         "quote-left",
         "eye",
