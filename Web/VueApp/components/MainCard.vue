@@ -17,7 +17,7 @@ defineProps<{
       {{ card.Title }}
     </h3>
 
-    <p class="text-base text-neutral2 dark:text-darkNeutral2 leading-relaxed mt-2">
+    <p class="text-base text-neutral2 dark:text-gray1 leading-relaxed mt-2">
       {{ card.Text }}
     </p>
 
