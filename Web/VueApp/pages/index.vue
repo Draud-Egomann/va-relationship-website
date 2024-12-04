@@ -6,6 +6,7 @@ const accordions = DataProvider.GetAccordions();
 const statCards = DataProvider.GetStatCards();
 const horizontalCard = DataProvider.GetHorizontalCard();
 const mainCards = DataProvider.GetMainCards();
+const audioPlayers = DataProvider.GetAudioPlayers();
 const slides = DataProvider.GetSlides();
 </script>
 
@@ -41,6 +42,6 @@ const slides = DataProvider.GetSlides();
   <HorizontalCard :horizontalCard="horizontalCard" />
   <MainCards :title="'Main Cards'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
     :cards="mainCards" />
-  <AudioPlayer />
+  <AudioPlayers :audioPlayers="audioPlayers" />
   <Slides :slides="slides" />
 </template>

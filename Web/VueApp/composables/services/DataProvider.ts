@@ -3,6 +3,7 @@ import { Card } from "~/composables/models/Card";
 import { HorizontalCard } from "../models/HorizontalCard";
 import { MainCard } from "../models/MainCard";
 import { Slide } from "../models/Slide";
+import { AudioPlayer } from "../models/AudioPlayer";
 
 export class DataProvider {
   static GetBlogEntries(): BlogEntry[] {
@@ -176,6 +177,32 @@ export class DataProvider {
       new Slide("First Slide", "https://picsum.photos/id/716/600/", "Slide 1"),
       new Slide("Second Slide", "https://picsum.photos/id/111/600/", "Slide 2"),
       new Slide(null, "https://picsum.photos/id/588/600/", "Slide 3"),
+    ]
+  }
+
+  static GetAudioPlayers(): AudioPlayer[] {
+    return [
+      new AudioPlayer(
+        "Trap Template",
+        "https://static.soundtrap.com/contentful-audio/bbpb82zmp9gd/2UzmfVz8RA7ML6T2IDrKY3/b4897207600480dac34aa84d5efe60bd/Trap_Template__3_.mp3",
+        "Soundtrap",
+        "https://static.soundtrap.com/contentful-images/bbpb82zmp9gd/2zrfzbNChJwvttdzWVPvnk/edf1789c92513dd56e95f5b6e1cc236c/trap-producers.jpg?fm=webp&q=80&w=1920",
+        "Placeholder Image",
+      ),
+      new AudioPlayer(
+        "Drill Template",
+        "https://static.soundtrap.com/contentful-audio/bbpb82zmp9gd/2UzmfVz8RA7ML6T2IDrKY3/b4897207600480dac34aa84d5efe60bd/Trap_Template__3_.mp3",
+        "Soundtrap",
+        "https://static.soundtrap.com/contentful-images/bbpb82zmp9gd/1oGNeIdscSmLcECuq8yW9m/2100a1d9d2771a96108983b6a9d8a8d8/jersey-drill-rapper.jpg?fm=webp&q=80&w=1920",
+        "Placeholder Image",
+      ),
+      new AudioPlayer(
+        "Jersey Club Template",
+        "https://static.soundtrap.com/contentful-audio/bbpb82zmp9gd/2ov1Hqqqossr3OLdeXh5Po/327e5a27181a09053ab55977398fb7db/Jersey_Template.mp3",
+        "Soundtrap",
+        "https://static.soundtrap.com/contentful-images/bbpb82zmp9gd/1oGNeIdscSmLcECuq8yW9m/2100a1d9d2771a96108983b6a9d8a8d8/jersey-drill-rapper.jpg?fm=webp&q=80&w=1920",
+        "Placeholder Image",
+      ),
     ]
   }
 }

@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+const props = defineProps<{
+  audioPlayer: AudioPlayer;
+}>();
+
 const progress = ref(0);
 const audio = ref<HTMLAudioElement | null>(null);
 const isPlaying = ref(false);
@@ -6,7 +10,7 @@ const currentTime = ref(0);
 const duration = ref(0);
 
 onMounted(() => {
-  audio.value = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+  audio.value = new Audio(props.audioPlayer.AudioUrl);
   audio.value.addEventListener('timeupdate', updateProgress);
   audio.value.addEventListener('loadedmetadata', () => {
     duration.value = audio.value!.duration;
@@ -56,7 +60,6 @@ function formatTime(seconds: number) {
 
   return `${mins}:${secs}`;
 }
-
 </script>
 
 <template>
@@ -65,16 +68,18 @@ function formatTime(seconds: number) {
       class="bg-accent2 border-slate-100 dark:bg-darkAccent2Dark dark:border-slate-500 border-b rounded-t-xl p-4 pb-6 sm:p-10 sm:pb-8 lg:p-6 xl:p-10 xl:pb-8 space-y-6 sm:space-y-8 lg:space-y-6 xl:space-y-8 items-center">
       <div class="flex items-center space-x-4">
         <img
-          src="https://img.freepik.com/free-psd/square-flyer-template-maximalist-business_23-2148524497.jpg?w=1800&t=st=1699458420~exp=1699459020~hmac=5b00d72d6983d04966cc08ccd0fc1f80ad0d7ba75ec20316660e11efd18133cd"
-          alt="" width="88" height="88" class="flex-none rounded-lg bg-slate-100" loading="lazy" />
+          :src="audioPlayer.ImageUrl ?? '~/assets/images/placeholder.jpg'"
+          :alt="audioPlayer.ImageAltText" width="80" height="80" 
+          :class="audioPlayer.ImageClass"
+          class="flex-none rounded-lg bg-slate-100" loading="lazy" />
 
         <div class="min-w-0 flex-auto space-y-1 font-semibold">
           <h3 class="text-neutral2/75 dark:text-neutral1 text-sm leading-6 truncate">
-            Music: New Album The Lorem
+            {{ audioPlayer.Title }}
           </h3>
 
           <p class="text-neutral2 dark:text-neutral1 text-lg">
-            Spotisimo
+            {{ audioPlayer.Creator }}
           </p>
         </div>
       </div>
