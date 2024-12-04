@@ -1,8 +1,9 @@
 <script lang="ts" setup>
 
+const links = DataProvider.GetHeaderLinks();
 const dropdown = ref<string | null>(null);
 const isMobileMenuOpen = ref(false);
-const links = DataProvider.GetHeaderLinks();
+const isHeaderVisible = ref(true);
 
 function toggleDropdown(linkName: string) {
   dropdown.value = dropdown.value === linkName ? null : linkName;
@@ -11,12 +12,34 @@ function toggleDropdown(linkName: string) {
 function toggleMobileMenu() {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;
 }
+
+let lastScrollY = 0;
+
+function handleScroll() {
+  const currentScrollY = window.scrollY;
+  if (currentScrollY > lastScrollY && currentScrollY > 50) {
+    isHeaderVisible.value = false; // Hide header on scroll down
+  } else {
+    isHeaderVisible.value = true; // Show header on scroll up
+  }
+  lastScrollY = currentScrollY;
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
 </script>
 
 <template>
-  <header
-    class="fixed w-full z-50 bg-gradient-to-l from-accent1 to-accent2 dark:from-darkAccent1Dark dark:to-darkPrimary2Dark shadow-md">
-    <nav class="container mx-auto flex items-center justify-between p-2">
+  <header :class="[
+    'fixed w-full z-50 bg-gradient-to-l from-accent1 to-accent2 dark:from-darkAccent1Dark dark:to-darkPrimary2Dark shadow-md transition-transform duration-300',
+    isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
+  ]">
+    <nav class="container mx-auto flex items-center justify-between p-4">
       <NuxtLink to="/" class="flex items-center">
         <img src="~/assets/images/logo.png" alt="Logo" width="80" class="pointer-events-none" />
       </NuxtLink>
@@ -59,7 +82,8 @@ function toggleMobileMenu() {
               class="flex-1 text-left text-neutral2 dark:text-neutral1 hover:bg-accent1 dark:hover:bg-primary1 px-4 py-2 rounded transition duration-300">
               {{ link.title }}
             </span>
-            <button @click="toggleDropdown(link.title)" class="ml-2 text-neutral2 dark:text-neutral1 focus:outline-none">
+            <button @click="toggleDropdown(link.title)"
+              class="ml-2 text-neutral2 dark:text-neutral1 focus:outline-none">
               <fa-icon :icon="['fas', 'chevron-down']" class="transition"
                 :class="{ 'rotate-180': dropdown == link.title }" />
             </button>
