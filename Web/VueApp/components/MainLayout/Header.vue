@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import { useDarkModeStore } from "~/store/DarkModeStore"
+
+const darkModeStore = useDarkModeStore();
 const links = DataProvider.GetHeaderLinks();
 const dropdown = ref<string | null>(null);
 const isMobileMenuOpen = ref(false);
@@ -85,6 +88,13 @@ onUnmounted(() => {
           </div>
         </li>
       </ul>
+
+      <!-- Dark Mode Toggle Button -->
+      <button @click="darkModeStore.toggleDarkMode"
+        class="ml-4 flex items-center justify-center w-10 h-10 text-neutral2 bg-neutral1 rounded-full shadow-md transition-transform duration-300 focus:outline-none"
+        :title="darkModeStore.isDarkMode ? 'In den hellen Modus wechseln' : 'In den dunklen Modus wechseln'">
+        <fa-icon :icon="darkModeStore.isDarkMode ? 'sun' : 'moon'" class="text-lg" />
+      </button>
 
       <!-- Mobile Burger Icon -->
       <button @click="toggleMobileMenu"

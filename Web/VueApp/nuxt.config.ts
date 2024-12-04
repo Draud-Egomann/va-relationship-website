@@ -42,6 +42,8 @@ export default defineNuxtConfig({
         "forward-step",
         "backward-step",
         "xmark",
+        "sun",
+        "moon",
       ],
       regular: ["user"],
     },
