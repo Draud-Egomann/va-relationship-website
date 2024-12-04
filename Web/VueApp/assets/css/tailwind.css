@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  color: #38bdf8;
+  background-color: #374151;
+}
+
 h1 {
   @apply text-6xl font-bold text-neutral2 roboto-bold;
 }
