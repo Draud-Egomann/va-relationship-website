@@ -173,9 +173,9 @@ export class DataProvider {
 
   static GetSlides(): Slide[] {
     return [
-      new Slide("First Slide", "https://picsum.photos/600", "Slide 1"),
-      new Slide("Second Slide", "https://picsum.photos/600", "Slide 2"),
-      new Slide(null, "https://picsum.photos/600", "Slide 3"),
+      new Slide("First Slide", "https://picsum.photos/id/716/600/", "Slide 1"),
+      new Slide("Second Slide", "https://picsum.photos/id/111/600/", "Slide 2"),
+      new Slide(null, "https://picsum.photos/id/588/600/", "Slide 3"),
     ]
   }
 }

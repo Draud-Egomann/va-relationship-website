@@ -69,6 +69,6 @@ function goToSlide(index: number) {
 
 <style scoped>
 .text-outline {
-  @apply text-shadow-[-1px_-1px_0_black, 1px_-1px_0_black, -1px_1px_0_black, 1px_1px_0_black] dark:text-shadow-[-1px_-1px_0_white, 1px_-1px_0_white, -1px_1px_0_white, 1px_1px_0_white];
+  @apply text-shadow-[-1px_-1px_0_black,1px_-1px_0_black,1px_1px_0_black,1px_1px_0_black] dark:text-shadow-[-1px_-1px_0_white,1px_-1px_0_white,-1px_1px_0_white,1px_1px_0_white];
 }
 </style>
