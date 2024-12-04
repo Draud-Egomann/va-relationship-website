@@ -7,6 +7,23 @@ import { AudioPlayer } from "../models/AudioPlayer";
 import { TableData } from "../models/Table";
 
 export class DataProvider {
+  static GetHeaderLinks(): { title: string; sublinks: string[]; }[] {
+    return [
+      {
+        title: "Zwischen Welten",
+        sublinks: ["Sublink 1", "Sublink 2", "Sublink 3"],
+      },
+      {
+        title: "KI in der Bildung",
+        sublinks: ["Sublink 1", "Sublink 2", "Sublink 3"],
+      },
+      {
+        title: "Bindungen mit KI",
+        sublinks: ["Sublink 1", "Sublink 2", "Sublink 3"],
+      },
+    ]
+  }
+
   static GetFooterLinks(): { title: string; url: string; }[] {
     return [
       { title: "Über uns", url: "/about" },
