@@ -58,10 +58,12 @@ onUnmounted(() => {
 
           <ul v-if="dropdown === link.title"
             class="absolute left-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 text-black dark:text-white shadow-lg rounded-md">
-            <li v-for="sublink in link.sublinks" :key="sublink"
-              class="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200">
-              <NuxtLink to="#">{{ sublink }}</NuxtLink>
-            </li>
+            <NuxtLink to="#">
+              <li v-for="sublink in link.sublinks" :key="sublink"
+                class="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200">
+                {{ sublink }}
+              </li>
+            </NuxtLink>
           </ul>
         </li>
       </ul>
