@@ -3,7 +3,8 @@ const footerLinks = DataProvider.GetFooterLinks();
 </script>
 
 <template>
-  <div class="flex flex-col bg-accent1 dark:bg-darkAccent1Dark">
+  <div
+    class="flex flex-col bg-gradient-to-r from-accent1 to-accent2 dark:from-darkAccent1Dark dark:to-darkPrimary2Dark">
     <div class="w-full">
       <div class="container flex flex-col mx-auto">
         <div class="flex flex-col items-center w-full my-8">
