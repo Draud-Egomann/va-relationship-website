@@ -4,6 +4,7 @@ import { HorizontalCard } from "../models/HorizontalCard";
 import { MainCard } from "../models/MainCard";
 import { Slide } from "../models/Slide";
 import { AudioPlayer } from "../models/AudioPlayer";
+import { TableData } from "../models/Table";
 
 export class DataProvider {
   static GetBlogEntries(): BlogEntry[] {
@@ -204,5 +205,33 @@ export class DataProvider {
         "Placeholder Image",
       ),
     ]
+  }
+
+  static GetTableData(): TableData {
+    return new TableData(
+      ["Model", "Overall", "Technical Robustness and Safety", "Privacy and Data Governance", "Transparency", "Diversity, Non-discrimination, and Fairness", "Societal and Environmental Well-being"],
+      [
+        {
+          model: "GPT-4 Turbo",
+          data: [0.84, 0.83, 1.00, 0.71, 0.68, 0.98],
+        },
+        {
+          model: "Claude 3 Opus",
+          data: [0.82, 0.81, 1.00, 0.64, 0.68, 0.99],
+        },
+        {
+          model: "Llama 3-70B Instruct",
+          data: [0.79, 0.69, 0.99, 0.65, 0.65, 0.97],
+        },
+        {
+          model: "GPT-3.5 Turbo",
+          data: [0.77, 0.70, 1.00, 0.58, 0.63, 0.96],
+        },
+        {
+          model: "Llama 3-8B Instruct",
+          data: [0.77, 0.62, 1.00, 0.61, 0.65, 0.97],
+        },
+      ]
+    )
   }
 }

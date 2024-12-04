@@ -8,6 +8,7 @@ const horizontalCard = DataProvider.GetHorizontalCard();
 const mainCards = DataProvider.GetMainCards();
 const audioPlayers = DataProvider.GetAudioPlayers();
 const slides = DataProvider.GetSlides();
+const tableData = DataProvider.GetTableData();
 </script>
 
 <template>
@@ -44,4 +45,5 @@ const slides = DataProvider.GetSlides();
     :cards="mainCards" />
   <AudioPlayers :audioPlayers="audioPlayers" />
   <Slides :slides="slides" />
+  <DataTable :table_data="tableData" />
 </template>
