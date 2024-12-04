@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-
 const links = DataProvider.GetHeaderLinks();
 const dropdown = ref<string | null>(null);
 const isMobileMenuOpen = ref(false);
@@ -19,18 +18,33 @@ function handleScroll() {
   const currentScrollY = window.scrollY;
   if (currentScrollY > lastScrollY && currentScrollY > 50) {
     isHeaderVisible.value = false; // Hide header on scroll down
+    dropdown.value = null; // Close dropdown on scroll
   } else {
     isHeaderVisible.value = true; // Show header on scroll up
   }
   lastScrollY = currentScrollY;
 }
 
+function handleClickOutside(event: MouseEvent) {
+  const target = event.target as HTMLElement;
+
+  // Check if the click is outside dropdown or toggle button
+  const dropdownMenus = document.querySelectorAll('.dropdown-menu, .dropdown-toggle');
+  const clickedInsideDropdown = Array.from(dropdownMenus).some(el => el.contains(target));
+
+  if (!clickedInsideDropdown) {
+    dropdown.value = null; // Close dropdown
+  }
+}
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
+  window.addEventListener('click', handleClickOutside);
 });
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
+  window.removeEventListener('click', handleClickOutside);
 });
 </script>
 
@@ -51,13 +65,14 @@ onUnmounted(() => {
             class="text-neutral2 dark:text-neutral1 hover:bg-accent1 dark:hover:bg-primary1 px-4 py-2 rounded transition duration-300">
             {{ link.title }}
           </NuxtLink>
-          <button @click="toggleDropdown(link.title)" class="ml-2 text-neutral2 dark:text-neutral1 focus:outline-none">
+          <button @click="toggleDropdown(link.title)"
+            class="ml-2 text-neutral2 dark:text-neutral1 focus:outline-none dropdown-toggle">
             <fa-icon :icon="['fas', 'chevron-down']" class="transition"
               :class="{ 'rotate-180': dropdown == link.title }" />
           </button>
 
           <ul v-if="dropdown === link.title"
-            class="absolute left-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 text-black dark:text-white shadow-lg rounded-md">
+            class="absolute left-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 text-black dark:text-white shadow-lg rounded-md dropdown-menu">
             <NuxtLink to="#">
               <li v-for="sublink in link.sublinks" :key="sublink"
                 class="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200">
