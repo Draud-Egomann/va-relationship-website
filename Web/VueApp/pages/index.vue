@@ -46,4 +46,5 @@ const tableData = DataProvider.GetTableData();
   <AudioPlayers :audioPlayers="audioPlayers" />
   <Slides :slides="slides" />
   <DataTable :table_data="tableData" />
+  <BentoBox />
 </template>
