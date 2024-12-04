@@ -42,15 +42,15 @@ const texts = [
     <div class="max-w-6xl mx-auto space-y-8">
       <div v-for="(item, index) in texts" :key="index" class="flex flex-wrap justify-between items-center">
 
-        <p class="text-neutral2 dark:text-darkNeutral2 text-lg w-full md:w-3/4 p-8 md:p-0 text-center md:text-left">
+        <p class="text-neutral2 dark:text-darkNeutral2 text-lg mb-4 w-full md:w-3/4 p-8 md:p-0 text-center md:text-left mx-auto">
           {{ item.text }}
         </p>
 
         <span v-if="hasKeyword"
-          class="font-extrabold text-xl w-full md:w-1/4 text-center md:text-right text-shadow-outline shadow-special1 dark:shadow-darkSpecial1Dark">
+          class="font-extrabold text-xl mb-8 w-full lg:w-1/4 text-center lg:text-right text-shadow-outline shadow-special1 dark:shadow-darkSpecial1Dark">
           {{ item.keyword }}
         </span>
-        <span v-else class="w-full md:w-auto">
+        <span v-else class="w-full md:w-auto mx-auto">
           <img src="https://picsum.photos/seed/bread/500" alt="asdaslhdl" class="w-52 h-32 mx-auto" draggable="false" />
         </span>
 
