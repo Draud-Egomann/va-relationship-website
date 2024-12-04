@@ -7,6 +7,14 @@ import { AudioPlayer } from "../models/AudioPlayer";
 import { TableData } from "../models/Table";
 
 export class DataProvider {
+  static GetFooterLinks(): { title: string; url: string; }[] {
+    return [
+      { title: "Über uns", url: "/about" },
+      { title: "Datenschutzbedingungen", url: "/privacy" },
+      { title: "Impressum", url: "/imprint" },
+    ]
+  }
+
   static GetBlogEntries(): BlogEntry[] {
     return [
       new BlogEntry(
