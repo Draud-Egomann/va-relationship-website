@@ -10,8 +10,8 @@ export class DataProvider {
   static GetFooterLinks(): { title: string; url: string; }[] {
     return [
       { title: "Über uns", url: "/about" },
-      { title: "Datenschutzbedingungen", url: "/privacy" },
-      { title: "Impressum", url: "/imprint" },
+      { title: "Datenschutzbedingungen", url: "/legal/privacy" },
+      { title: "Impressum", url: "/legal/imprint" },
     ]
   }
 
