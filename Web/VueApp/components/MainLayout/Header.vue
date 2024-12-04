@@ -103,7 +103,7 @@ onUnmounted(() => {
               {{ link.title }}
             </span>
             <button @click="toggleDropdown(link.title)"
-              class="ml-2 text-neutral2 dark:text-neutral1 focus:outline-none">
+              class="ml-2 text-neutral2 dark:text-neutral1 focus:outline-none pr-4 md:pr-0">
               <fa-icon :icon="['fas', 'chevron-down']" class="transition"
                 :class="{ 'rotate-180': dropdown == link.title }" />
             </button>
