@@ -41,6 +41,7 @@ export default defineNuxtConfig({
         "pause",
         "forward-step",
         "backward-step",
+        "xmark",
       ],
       regular: ["user"],
     },

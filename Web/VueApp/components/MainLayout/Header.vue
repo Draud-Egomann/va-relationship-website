@@ -89,7 +89,7 @@ onUnmounted(() => {
       <!-- Mobile Burger Icon -->
       <button @click="toggleMobileMenu"
         class="block md:hidden text-neutral2 dark:text-neutral1 focus:outline-none pr-4">
-        <fa-icon :icon="['fas', 'bars']" class="text-3xl" />
+        <fa-icon :icon="isMobileMenuOpen ? ['fas', 'xmark'] : ['fas', 'bars']" class="text-3xl" />
       </button>
     </nav>
 
