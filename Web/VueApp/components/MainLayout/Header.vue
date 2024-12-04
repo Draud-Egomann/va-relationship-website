@@ -65,21 +65,24 @@ onUnmounted(() => {
             class="text-neutral2 dark:text-neutral1 hover:bg-accent1 dark:hover:bg-primary1 px-4 py-2 rounded transition duration-300">
             {{ link.title }}
           </NuxtLink>
-          <button @click="toggleDropdown(link.title)"
-            class="ml-2 text-neutral2 dark:text-neutral1 focus:outline-none dropdown-toggle">
-            <fa-icon :icon="['fas', 'chevron-down']" class="transition"
-              :class="{ 'rotate-180': dropdown == link.title }" />
-          </button>
 
-          <ul v-if="dropdown === link.title"
-            class="absolute left-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 text-black dark:text-white shadow-lg rounded-md dropdown-menu">
-            <NuxtLink to="#">
-              <li v-for="sublink in link.sublinks" :key="sublink"
-                class="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200">
-                {{ sublink }}
-              </li>
-            </NuxtLink>
-          </ul>
+          <div v-if="link.sublinks.length > 0">
+            <button @click="toggleDropdown(link.title)"
+              class="ml-2 text-neutral2 dark:text-neutral1 focus:outline-none dropdown-toggle">
+              <fa-icon :icon="['fas', 'chevron-down']" class="transition"
+                :class="{ 'rotate-180': dropdown == link.title }" />
+            </button>
+
+            <ul v-if="dropdown === link.title"
+              class="absolute left-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 text-black dark:text-white shadow-lg rounded-md dropdown-menu">
+              <NuxtLink to="#">
+                <li v-for="sublink in link.sublinks" :key="sublink"
+                  class="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200">
+                  {{ sublink }}
+                </li>
+              </NuxtLink>
+            </ul>
+          </div>
         </li>
       </ul>
 
