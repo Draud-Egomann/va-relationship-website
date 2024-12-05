@@ -120,6 +120,43 @@ export class DataProvider {
     ]
   }
 
+  static GetAudioTracks1(): { title: string, text: string, people: { name: string, profession: string, description: string, image: string, audio: string }[] } {
+    return {
+      title: "Audio Tracks 1",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      people: [
+        {
+          name: "John Doe",
+          profession: "Software Engineer",
+          description: "An experienced developer in web technologies.",
+          image: "https://picsum.photos/seed/code/48",
+          audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+        },
+        {
+          name: "Jane Smith",
+          profession: "Graphic Designer",
+          description: "Specializes in UI/UX design with a passion for typography.",
+          image: "https://picsum.photos/seed/uiux/48",
+          audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+        },
+        {
+          name: "Alice Johnson",
+          profession: "Product Manager",
+          description: "Focused on delivering seamless user experiences.",
+          image: "https://picsum.photos/seed/tea/48",
+          audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+        },
+        {
+          name: "Bob Lee",
+          profession: "Data Scientist",
+          description: "Expert in machine learning and data analytics.",
+          image: "https://picsum.photos/seed/bread/48",
+          audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+        },
+      ]
+    }
+  }
+
   static GetMainHeading(): [string, string] {
     return ["Title", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."];
   }

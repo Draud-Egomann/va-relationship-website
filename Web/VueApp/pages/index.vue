@@ -13,6 +13,7 @@ const blogEntries = DataProvider.GetBlogEntries();
 const videoBanner = DataProvider.GetVideoBanner();
 const galleryImages = DataProvider.GetGalleryImages();
 const imageItems = DataProvider.GetImageBanner();
+const audioTracks1 = DataProvider.GetAudioTracks1();
 const heading = DataProvider.GetMainHeading();
 const cards = DataProvider.GetCards();
 const accordions = DataProvider.GetAccordions();
@@ -38,7 +39,7 @@ const tableData = DataProvider.GetTableData();
   <VideoSection :title="'Video Section'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
     :videoUrl="'https://www.w3schools.com/html/mov_bbb.mp4'" />
   <MainSection :items="imageItems" :reverse="false" />
-  <Main7 />
+  <AudioPlayer1 :title="audioTracks1.title" :text="audioTracks1.text" :people="audioTracks1.people" />
   <MainSection :items="imageItems" :reverse="true" />
   <Main8 />
   <Main9 />
@@ -59,7 +60,7 @@ const tableData = DataProvider.GetTableData();
   <HorizontalCard :horizontalCard="horizontalCard" />
   <MainCards :title="'Main Cards'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
     :cards="mainCards" />
-  <AudioPlayers :audioPlayers="audioPlayers" />
+  <AudioPlayer2s :audioPlayers="audioPlayers" />
   <Slides :slides="slides" />
   <DataTable :table_data="tableData" />
   <BentoBox />
