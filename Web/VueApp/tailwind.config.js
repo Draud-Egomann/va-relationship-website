@@ -19,6 +19,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(circle 350px at 12% 50%, var(--tw-gradient-stops))',
+      },
       // https://www.hyperui.dev/blog/text-shadow-with-tailwindcss
       textShadow: {
         sm: '0 1px 2px var(--tw-shadow-color)',
