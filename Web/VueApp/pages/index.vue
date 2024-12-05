@@ -14,6 +14,7 @@ const videoBanner = DataProvider.GetVideoBanner();
 const galleryImages = DataProvider.GetGalleryImages();
 const imageItems = DataProvider.GetImageBanner();
 const audioTracks1 = DataProvider.GetAudioTracks1();
+const call2Action = DataProvider.GetCall2Action();
 const heading = DataProvider.GetMainHeading();
 const cards = DataProvider.GetCards();
 const accordions = DataProvider.GetAccordions();
@@ -23,6 +24,10 @@ const mainCards = DataProvider.GetMainCards();
 const audioPlayers = DataProvider.GetAudioPlayers();
 const slides = DataProvider.GetSlides();
 const tableData = DataProvider.GetTableData();
+
+function onButtonClicked() {
+  console.log("Button clicked!");
+}
 </script>
 
 <template>
@@ -41,7 +46,7 @@ const tableData = DataProvider.GetTableData();
   <MainSection :items="imageItems" :reverse="false" />
   <AudioPlayer1 :title="audioTracks1.title" :text="audioTracks1.text" :people="audioTracks1.people" />
   <MainSection :items="imageItems" :reverse="true" />
-  <Main8 />
+  <Call2Action :title="call2Action.title" :text="call2Action.text" :ctaText="call2Action.ctaText" @onButtonClicked="onButtonClicked" />
   <Main9 />
   <Main10 :has-keyword="true" />
   <Main10 :has-keyword="false" />
