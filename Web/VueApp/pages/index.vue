@@ -10,6 +10,7 @@ const mockData = {
 }
 
 const blogEntries = DataProvider.GetBlogEntries();
+const videoBanner = DataProvider.GetVideoBanner();
 const heading = DataProvider.GetMainHeading();
 const cards = DataProvider.GetCards();
 const accordions = DataProvider.GetAccordions();
@@ -29,7 +30,8 @@ const tableData = DataProvider.GetTableData();
 
   <Cards :title="heading[0]" :text="heading[1]" :cards="cards" />
   <BlogTimeline :blogs="blogEntries" />
-  <Main3 />
+  <VideoBanner :videoUrl="videoBanner.videoUrl" :title="videoBanner.title" :description="videoBanner.description"
+    :linkText="videoBanner.linkText" :linkUrl="videoBanner.linkUrl" />
   <Main4 />
   <Main5 />
   <Main6 />

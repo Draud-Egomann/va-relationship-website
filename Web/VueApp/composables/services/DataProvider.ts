@@ -76,6 +76,16 @@ export class DataProvider {
     ]
   }
 
+  static GetVideoBanner(): { videoUrl: string, title: string, description: string, linkText: string | null, linkUrl: string | null } {
+    return {
+      videoUrl: "https://videos.pexels.com/video-files/6752408/6752408-uhd_2160_4096_25fps.mp4",
+      title: "Engaging Video Banner Title",
+      description: "Brief description that aligns with the website's message, adding more context or information.",
+      linkText: "Learn More",
+      linkUrl: "#"
+    }
+  }
+
   static GetMainHeading(): [string, string] {
     return ["Title", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."];
   }
