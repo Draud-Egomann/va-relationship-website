@@ -5,6 +5,7 @@ import { MainCard } from "../models/MainCard";
 import { Slide } from "../models/Slide";
 import { AudioPlayer } from "../models/AudioPlayer";
 import { TableData } from "../models/Table";
+import { ImageBaseItem } from "../models/ImageBaseItem";
 
 export class DataProvider {
   static GetHeaderLinks(): { title: string; sublinks: string[]; }[] {
@@ -83,6 +84,19 @@ export class DataProvider {
       description: "Brief description that aligns with the website's message, adding more context or information.",
       linkText: "Learn More",
       linkUrl: "#"
+    }
+  }
+
+  static GetGalleryImages(): { title: string, text: string, images: ImageBaseItem[] } {
+    return {
+      title: "Gallery Title",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      images: [
+        new ImageBaseItem("https://picsum.photos/300/300", "Placeholder Image", null, null, null),
+        new ImageBaseItem("https://picsum.photos/300/300", "Placeholder Image", null, null, null),
+        new ImageBaseItem("https://picsum.photos/300/300", "Placeholder Image", null, null, null),
+        new ImageBaseItem("https://picsum.photos/300/300", "Placeholder Image", null, null, null),
+      ]
     }
   }
 
