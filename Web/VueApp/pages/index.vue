@@ -28,7 +28,7 @@ const tableData = DataProvider.GetTableData();
     :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'" />
 
   <Cards :title="heading[0]" :text="heading[1]" :cards="cards" />
-  <Main2 :blogs="blogEntries" />
+  <BlogTimeline :blogs="blogEntries" />
   <Main3 />
   <Main4 />
   <Main5 />
