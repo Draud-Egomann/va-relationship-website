@@ -1,23 +1,12 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
+  items: {
+    title: string
+    text: string
+    imageUrl: string
+  }[]
   reverse?: boolean
 }>()
-
-const items = ref([
-  {
-    title: 'Heading 1',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-  },
-  {
-    title: 'Heading 2',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    imageUrl: 'https://picsum.photos/seed/heading2/150'
-  },
-  {
-    title: 'Heading 3',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-  }
-])
 
 const currentIndex = ref(0)
 
@@ -27,7 +16,7 @@ onMounted(() => {
 
 function startAutoRotate() {
   setInterval(() => {
-    currentIndex.value = (currentIndex.value + 1) % items.value.length
+    currentIndex.value = (currentIndex.value + 1) % props.items.length
   }, 2500);
 }
 </script>
@@ -37,7 +26,7 @@ function startAutoRotate() {
     <div class="flex flex-wrap justify-center gap-0" :class="{ 'flex-row-reverse': reverse }">
 
       <div class="w-full md:w-1/2">
-        <img src="https://picsum.photos/150" alt="Placeholder Image"
+        <img :src="items[currentIndex].imageUrl" alt="Placeholder Image"
           class="w-full transition duration-500 ease-in-out" />
       </div>
 

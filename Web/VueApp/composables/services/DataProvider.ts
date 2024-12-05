@@ -100,6 +100,26 @@ export class DataProvider {
     }
   }
 
+  static GetImageBanner(): { title: string, text: string, imageUrl: string }[] {
+    return [
+      {
+        title: "Image Banner 1",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        imageUrl: "https://picsum.photos/150",
+      },
+      {
+        title: "Image Banner 2",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        imageUrl: "https://picsum.photos/seed/heading2/150",
+      },
+      {
+        title: "Image Banner 3",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        imageUrl: "https://picsum.photos/seed/heading3/150",
+      },
+    ]
+  }
+
   static GetMainHeading(): [string, string] {
     return ["Title", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."];
   }

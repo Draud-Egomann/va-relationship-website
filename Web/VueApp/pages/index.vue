@@ -12,6 +12,7 @@ const mockData = {
 const blogEntries = DataProvider.GetBlogEntries();
 const videoBanner = DataProvider.GetVideoBanner();
 const galleryImages = DataProvider.GetGalleryImages();
+const imageItems = DataProvider.GetImageBanner();
 const heading = DataProvider.GetMainHeading();
 const cards = DataProvider.GetCards();
 const accordions = DataProvider.GetAccordions();
@@ -36,9 +37,9 @@ const tableData = DataProvider.GetTableData();
   <Gallery1 :title="galleryImages.title" :text="galleryImages.text" :images="galleryImages.images" />
   <VideoSection :title="'Video Section'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
     :videoUrl="'https://www.w3schools.com/html/mov_bbb.mp4'" />
-  <Main6 />
+  <MainSection :items="imageItems" :reverse="false" />
   <Main7 />
-  <Main6 :reverse="true" />
+  <MainSection :items="imageItems" :reverse="true" />
   <Main8 />
   <Main9 />
   <Main10 :has-keyword="true" />
