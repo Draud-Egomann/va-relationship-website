@@ -165,6 +165,19 @@ export class DataProvider {
     }
   }
 
+  static GetStickyCards(): { title: string, text: string, cards: { title: string, text: string }[] } {
+    return {
+      title: "Sticky Cards",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      cards: [
+        { title: "Card 1", text: "Description for the first card." },
+        { title: "Card 2", text: "Description for the second card." },
+        { title: "Card 3", text: "Description for the third card." },
+        { title: "Card 4", text: "Description for the fourth card." },
+      ]
+    }
+  }
+
   static GetMainHeading(): [string, string] {
     return ["Title", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."];
   }
