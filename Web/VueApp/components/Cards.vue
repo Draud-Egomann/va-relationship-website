@@ -13,7 +13,7 @@ defineProps<{
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <Card1 v-for="card in cards" :card="card" />
+      <Card v-for="card in cards" :card="card" />
     </div>
   </div>
 </template>
