@@ -34,7 +34,8 @@ const tableData = DataProvider.GetTableData();
   <VideoBanner :videoUrl="videoBanner.videoUrl" :title="videoBanner.title" :description="videoBanner.description"
     :linkText="videoBanner.linkText" :linkUrl="videoBanner.linkUrl" />
   <Gallery1 :title="galleryImages.title" :text="galleryImages.text" :images="galleryImages.images" />
-  <Main5 />
+  <VideoSection :title="'Video Section'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
+    :videoUrl="'https://www.w3schools.com/html/mov_bbb.mp4'" />
   <Main6 />
   <Main7 />
   <Main6 :reverse="true" />
