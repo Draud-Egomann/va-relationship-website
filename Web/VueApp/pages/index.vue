@@ -50,8 +50,8 @@ function onButtonClicked() {
   <Call2Action :title="call2Action.title" :text="call2Action.text" :ctaText="call2Action.ctaText"
     @onButtonClicked="onButtonClicked" />
   <StickyCards :title="stickyCards.title" :text="stickyCards.text" :cards="stickyCards.cards" />
-  <Main10 :has-keyword="true" />
-  <Main10 :has-keyword="false" />
+  <TextKeywords :has-keyword="true" />
+  <TextKeywords :has-keyword="false" />
   <Accordions :title="'Accordions'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
     :accordions="accordions" />
   <Blockquote :author="'tom'">

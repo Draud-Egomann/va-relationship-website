@@ -178,6 +178,36 @@ export class DataProvider {
     }
   }
 
+  static GetTextKeywords(): { text: string, keyword: string, image: ImageBaseItem }[] {
+    return [
+      {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        keyword: "Insight",
+        image: new ImageBaseItem("https://picsum.photos/seed/insight/500", "Placeholder Image", null, null, null),
+      },
+      {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        keyword: "Focus",
+        image: new ImageBaseItem("https://picsum.photos/seed/focus/500", "Placeholder Image", null, null, null),
+      },
+      {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        keyword: "Perspective",
+        image: new ImageBaseItem("https://picsum.photos/seed/perspective/500", "Placeholder Image", null, null, null),
+      },
+      {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        keyword: "Innovation",
+        image: new ImageBaseItem("https://picsum.photos/seed/innovation/500", "Placeholder Image", null, null, null),
+      },
+      {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        keyword: "Inspiration",
+        image: new ImageBaseItem("https://picsum.photos/seed/inspiration/500", "Placeholder Image", null, null, null),
+      }
+    ]
+  }
+
   static GetMainHeading(): [string, string] {
     return ["Title", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."];
   }
