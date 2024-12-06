@@ -53,7 +53,7 @@ onUnmounted(() => {
 
 <template>
   <header :class="[
-    'fixed w-full z-50 bg-gradient-to-l from-accent1/80 to-accent2/95 dark:from-darkAccent1Dark/80 dark:to-darkPrimary2Dark/95 shadow-md transition-transform duration-300',
+    'fixed w-full z-50 bg-gradient-to-l from-accent1/80 to-accent2/95 dark:from-darkAccent1Dark/80 dark:to-darkPrimary2Dark/95 shadow-md transition-transform duration-300 print:hidden',
     isHeaderVisible ? 'translate-y-0' : '-translate-y-full shadow-primary1'
   ]">
     <nav class="container mx-auto flex items-center justify-between p-4">

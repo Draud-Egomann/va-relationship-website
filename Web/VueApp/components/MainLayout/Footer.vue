@@ -4,7 +4,7 @@ const footerLinks = DataProvider.GetFooterLinks();
 
 <template>
   <div
-    class="flex flex-col bg-gradient-to-r from-accent1 to-accent2 dark:from-darkAccent1Dark dark:to-darkPrimary2Dark">
+    class="flex flex-col bg-gradient-to-r from-accent1 to-accent2 dark:from-darkAccent1Dark dark:to-darkPrimary2Dark print:hidden">
     <div class="w-full">
       <div class="container flex flex-col mx-auto">
         <div class="flex flex-col items-center w-full my-8">
@@ -13,8 +13,7 @@ const footerLinks = DataProvider.GetFooterLinks();
           </span>
 
           <div class="flex flex-col items-center gap-6 mb-6">
-            <div
-              class="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap px-2">
+            <div class="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap px-2">
               <NuxtLink v-for="footerLink in footerLinks" :to="footerLink.url"
                 class="text-gray-700 dark:text-white/70 hover:text-primary2 dark:hover:text-darkSpecial1Dark transition">
                 {{ footerLink.title }}
