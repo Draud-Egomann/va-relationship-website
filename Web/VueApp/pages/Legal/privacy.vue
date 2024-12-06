@@ -31,7 +31,7 @@ const technologies = [
 </script>
 
 <template>
-  <div class="max-w-6xl mx-auto p-8">
+  <div class="max-w-6xl mx-auto p-8 pt-32">
     <h1 class="text-4xl font-bold mb-4">Datenschutzerklärung</h1>
     <p class="mb-4">Zuletzt aktualisiert am: 03.12.2024</p>
 
