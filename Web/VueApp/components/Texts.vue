@@ -17,7 +17,7 @@ defineProps<{
         'flex flex-col space-y-4',
         index % 2 === 0 ? 'items-start' : 'items-end'
       ]">
-        <h4 class="text-primary1/80">
+        <h4 class="text-primary1/80 dark:text-darkPrimary1Dark/80">
           {{ section.title }}
         </h4>
         <p class="text-base text-gray-700 dark:text-gray1 max-w-[80%]" :class="index % 2 === 0 ? 'text-left' : 'text-right'">
