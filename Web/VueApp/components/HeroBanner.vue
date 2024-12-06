@@ -9,7 +9,7 @@ const props = defineProps<{
 }>();
 const emits = defineEmits(['buttonClickEvent']);
 
-const height = props.isBigView ? "h-[95vh]" : "h-[40vh]";
+const height = props.isBigView ? "h-[40vh] md:h-[95vh]" : "h-[40vh]";
 
 onNuxtReady(() => {
   if (props.hasButton && stringHelper.IsNullOrEmpty(props.buttonText)) {
@@ -32,7 +32,7 @@ function scrollDown() {
 <template>
   <div :class="height"
     class="w-full px-8 relative bgImg bg-gradient-radial from-accent1 to-accent2 dark:from-white/40 dark:to-transparent">
-    <div class="h-full flex flex-col justify-center items-center md:items-baseline gap-8 container mx-auto">
+    <div class="h-full md:h-full flex flex-col justify-center items-center md:items-baseline gap-8 container mx-auto">
       <div class="w-full flex flex-col gap-4 py-4">
         <h1 class="font-extrabold text-white text-center lg:text-left text-3xl lg:text-4xl my-2 animate-fade-right">
           {{ title }}
