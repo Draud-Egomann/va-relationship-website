@@ -28,7 +28,7 @@ function nextTimeline() {
 
 <template>
   <div class="max-w-6xl mx-auto p-8">
-    <div class="flex items-center justify-between mb-8">
+    <div class="flex flex-wrap items-center justify-between mb-8">
       <button @click="prevTimeline()" class="text-gray1 hover:text-gray2 dark:hover:text-neutral1">
         <fa-icon icon="arrow-left" />
       </button>
