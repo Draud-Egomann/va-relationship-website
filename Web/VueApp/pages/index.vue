@@ -112,6 +112,26 @@ const mainCards = [
     :text="'In unserem Projekt möchten wir untersuchen, wie KI unser Denken, unser soziales Verhalten und die Gesellschaft im Allgemeinen beeinflusst.'"
     :cards="goalCards" />
 
+  <StickyCards title="Unsere Thesen zur KI"
+    text="Wir betrachten die Auswirkungen der zunehmenden Abhängigkeit von KI auf verschiedene Lebensbereiche." :cards="[
+      {
+        title: 'Übermässige Abhängigkeit von KI',
+        text: 'Die zunehmende Abhängigkeit von KI kann dazu führen, dass Menschen ihre Fähigkeit verlieren, Probleme eigenständig zu lösen.'
+      },
+      {
+        title: 'Gefährdung der Bildung',
+        text: 'Besonders für jüngere Generationen besteht die Gefahr, dass sie ohne Eigendenken aufwachsen und wichtige Problemlösungsfähigkeiten nicht entwickeln.'
+      },
+      {
+        title: 'Auswirkungen auf Beziehungen',
+        text: 'Romantische Beziehungen mit KI könnten menschliche Beziehungen zunehmend ersetzen und die soziale Isolation verstärken.'
+      },
+      {
+        title: 'Isolation als neue Herausforderung',
+        text: 'Die steigende Isolation durch KI-basierte Unterstützung könnte eine neue Risikogruppe in der Gesellschaft hervorbringen.'
+      }
+    ]" />
+
   <div class="w-3/4 mx-auto border border-gray1/20 mt-8"></div>
 
   <div class="max-w-6xl mx-auto p-8">
