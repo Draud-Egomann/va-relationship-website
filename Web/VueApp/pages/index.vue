@@ -84,4 +84,19 @@ const goalCards = [
   <Cards :title="'Unsere Fragen & Ziele'"
     :text="'In unserem Projekt möchten wir untersuchen, wie KI unser Denken, unser soziales Verhalten und die Gesellschaft im Allgemeinen beeinflusst.'"
     :cards="goalCards" />
+
+  <div class="w-3/4 mx-auto border border-gray1/20 mt-8"></div>
+
+  <div class="max-w-6xl mx-auto p-8">
+    <div class="text-center mb-8">
+      <h2 class="text-special1 dark:text-darkSpecial1Dark my-6">
+        Dank
+      </h2>
+
+      <p class="text-neutral2 dark:text-gray1" :class="{ 'w-3/4 mx-auto': true }">
+        Wir möchten uns bei unserer Expertenperson Herr Grüter bedanken, dass er diese VA begleitet und uns bei
+        sämtlichen Fragen unterstützt hat.
+      </p>
+    </div>
+  </div>
 </template>
