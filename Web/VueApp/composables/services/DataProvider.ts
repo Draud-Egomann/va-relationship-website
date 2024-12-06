@@ -8,18 +8,21 @@ import { TableData } from "../models/Table";
 import { ImageBaseItem } from "../models/ImageBaseItem";
 
 export class DataProvider {
-  static GetHeaderLinks(): { title: string; sublinks: string[]; }[] {
+  static GetHeaderLinks(): { title: string; url :string, sublinks: string[]; }[] {
     return [
       {
         title: "Zwischen Welten",
+        url: "/ai-world",
         sublinks: ["Sublink 1", "Sublink 2", "Sublink 3"],
       },
       {
         title: "KI in der Bildung",
+        url: "/ai-education",
         sublinks: ["Sublink 1", "Sublink 2", "Sublink 3"],
       },
       {
         title: "Bindungen mit KI",
+        url: "/chatbots",
         sublinks: ["Sublink 1", "Sublink 2", "Sublink 3"],
       },
     ]

@@ -64,7 +64,7 @@ onUnmounted(() => {
       <!-- Desktop Navigation -->
       <ul class="hidden md:flex items-center space-x-6">
         <li v-for="link in links" :key="link.title" class="relative group flex items-center">
-          <NuxtLink to="/"
+          <NuxtLink :to="link.url"
             class="text-neutral2 dark:text-neutral1 hover:bg-accent1 dark:hover:bg-primary1 px-4 py-2 rounded transition duration-300">
             {{ link.title }}
           </NuxtLink>
@@ -108,10 +108,10 @@ onUnmounted(() => {
       <ul class="flex flex-col items-start space-y-4 px-4 py-4">
         <li v-for="link in links" :key="link.title" class="flex flex-col items-start w-full">
           <div class="flex items-center w-full">
-            <span
+            <NuxtLink :to="link.url"
               class="flex-1 text-left text-neutral2 dark:text-neutral1 hover:bg-accent1 dark:hover:bg-primary1 px-4 py-2 rounded transition duration-300">
               {{ link.title }}
-            </span>
+            </NuxtLink>
             <button @click="toggleDropdown(link.title)"
               class="ml-2 text-neutral2 dark:text-neutral1 focus:outline-none pr-4 md:pr-0">
               <fa-icon :icon="['fas', 'chevron-down']" class="transition"
