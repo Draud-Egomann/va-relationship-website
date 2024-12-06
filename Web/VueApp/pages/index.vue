@@ -74,7 +74,7 @@ const mainCards = [
     "KI in der Bildung",
     "Wie KI unsere Bildungssysteme revolutioniert und die Art und Weise, wie wir lernen, verändert.",
     "https://picsum.photos/id/891/800/500",
-    "Ein generisches Bild", 
+    "Ein generisches Bild",
   ),
   new MainCard(
     "chatbots/",
@@ -121,7 +121,7 @@ const mainCards = [
       </h2>
 
       <p class="text-neutral2 dark:text-gray1" :class="{ 'w-3/4 mx-auto': true }">
-        Wir möchten uns bei unserer Expertenperson Herr Grüter bedanken, dass er diese VA begleitet und uns bei
+        Wir möchten uns bei unserer Expertenperson <b>Herrn Grüter</b> bedanken, dass er diese VA begleitet und uns bei
         sämtlichen Fragen unterstützt hat.
       </p>
     </div>
