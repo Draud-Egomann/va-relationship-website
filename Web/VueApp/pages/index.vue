@@ -7,6 +7,57 @@ const heroBanner = {
     "Die Verschmelzung von Technologie und menschlichem Alltag öffnet Türen zu ungeahnten Möglichkeiten.",
   ],
 }
+
+const goalCards = [
+  new Card(
+    "Identität/Sozialisation",
+    "Wie beeinflusst Künstliche Intelligenz unser Denken und unsere Beziehungen?",
+    "https://fastly.picsum.photos/id/1027/300/300.jpg?hmac=PblN9CQ5na5QsjLMcsx_O1O-nlix2aUNWp39M9WpMTI",
+    "",
+  ),
+  new Card(
+    "Technologie",
+    "Wie weit ist KI bereits fortgeschritten?",
+    "/technology.jpg",
+    "",
+  ),
+  new Card(
+    "Ethik",
+    "Ist es ethisch vertretbar, eine KI über Menschen richten zu lassen?",
+    "/ai_judge.jpg",
+    "",
+  ),
+  new Card(
+    "Recht",
+    "Ist KI mit unserem Rechtssystem konform?",
+    "/hammer.jpg",
+    "",
+  ),
+  new Card(
+    "Identität/Sozialisation",
+    "Wie verändert Künstliche Intelligenz das menschliche Denken?",
+    "https://fastly.picsum.photos/id/442/300/300.jpg?hmac=10-uBtKviZG5wK4me1sFtsdY0XqHNDDy1puI09aFbBU",
+    "",
+  ),
+  new Card(
+    "Wirtschaft",
+    "Bedroht KI den Arbeitsmarkt?",
+    "https://cdn.pixabay.com/photo/2023/07/08/07/25/ai-generated-8113893_960_720.jpg",
+    "",
+  ),
+  new Card(
+    "Identität/Sozialisation/Ethik",
+    "Welche sozialen und ethischen Herausforderungen bringt der Einsatz von KI mit sich?",
+    "https://picsum.photos/id/3/300",
+    "",
+  ),
+  new Card(
+    "Identität/Sozialisation",
+    "Wie verändert sich das menschliche Verhalten durch die Integration von KI in den Alltag?",
+    "/social.jpg",
+    "",
+  ),
+]
 </script>
 
 <template>
@@ -29,4 +80,8 @@ const heroBanner = {
         text: 'Sei es in der Berufsschule oder auf der Arbeit. Dabei kommen wir schnell zu Resultaten, ohne dieses wirklich zu verstehen. Dies bemerken wir auch in unserem Umfeld. Dadurch haben wir auch einen hohen Selbstbezug zu diesem Thema. KI ist ein nützliches Tool und findet immer mehr Verwendung, jedoch möchten wir Risiken früh erkennen und dabei lernen, wie wir uns auf die Zukunft vorbereiten können.'
       },
     ]" />
+
+  <Cards :title="'Unsere Fragen & Ziele'"
+    :text="'In unserem Projekt möchten wir untersuchen, wie KI unser Denken, unser soziales Verhalten und die Gesellschaft im Allgemeinen beeinflusst.'"
+    :cards="goalCards" />
 </template>
