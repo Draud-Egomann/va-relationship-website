@@ -16,6 +16,7 @@ const imageItems = DataProvider.GetImageBanner();
 const audioTracks1 = DataProvider.GetAudioTracks1();
 const call2Action = DataProvider.GetCall2Action();
 const stickyCards = DataProvider.GetStickyCards();
+const textKeywords = DataProvider.GetTextKeywords();
 const heading = DataProvider.GetMainHeading();
 const cards = DataProvider.GetCards();
 const accordions = DataProvider.GetAccordions();
@@ -50,8 +51,8 @@ function onButtonClicked() {
   <Call2Action :title="call2Action.title" :text="call2Action.text" :ctaText="call2Action.ctaText"
     @onButtonClicked="onButtonClicked" />
   <StickyCards :title="stickyCards.title" :text="stickyCards.text" :cards="stickyCards.cards" />
-  <TextKeywords :has-keyword="true" />
-  <TextKeywords :has-keyword="false" />
+  <TextKeywords :texts="textKeywords" :has-keyword="true" />
+  <TextKeywords :texts="textKeywords" :has-keyword="false" />
   <Accordions :title="'Accordions'" :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
     :accordions="accordions" />
   <Blockquote :author="'tom'">
