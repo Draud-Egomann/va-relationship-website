@@ -1,16 +1,15 @@
 <script lang="ts" setup>
 const heroBanner = {
-  title: "Welcome to the Hero Banner",
-  subTitle: "A Vue.js Component Example",
+  title: "Wenn Künstliche Intelligenz Lehrer, Politiker und Partner wird",
+  subTitle: "Die neue Intimität",
   isBigView: true,
   paragraphs: [
-    "This is the first paragraph of text.",
-    "Here is another paragraph for demonstration purposes.",
+    "Die Verschmelzung von Technologie und menschlichem Alltag öffnet Türen zu ungeahnten Möglichkeiten.",
   ],
 }
 </script>
 
 <template>
-  <HeroBanner :title="heroBanner.title" :subTitle="heroBanner.subTitle" :isBigView="heroBanner.isBigView" :hasButton="false"
-    :buttonText="null" :paragraphs="heroBanner.paragraphs" @buttonClickEvent="() => { }" />
+  <HeroBanner :title="heroBanner.title" :subTitle="heroBanner.subTitle" :isBigView="heroBanner.isBigView"
+    :hasButton="false" :buttonText="null" :paragraphs="heroBanner.paragraphs" @buttonClickEvent="() => { }" />
 </template>

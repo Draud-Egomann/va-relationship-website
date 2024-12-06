@@ -34,13 +34,15 @@ function scrollDown() {
     class="w-full px-8 relative bgImg bg-gradient-radial from-accent1 to-accent2 dark:from-white/40 dark:to-transparent">
     <div class="h-full md:h-full flex flex-col justify-center items-center md:items-baseline gap-8 container mx-auto">
       <div class="w-full flex flex-col gap-4 py-4">
-        <h1 class="font-extrabold text-white text-center lg:text-left text-3xl lg:text-4xl my-2 animate-fade-right">
+        <h2
+          class="font-bold text-white text-center tracking-wider lg:text-left text-2xl lg:text-3xl my-2 animate-fade-right">
+          {{ subTitle }}
+        </h2>
+
+        <h1 class="font-extrabold text-white text-center lg:text-left text-3xl lg:text-4xl -mt-4 my-2 animate-fade-right">
           {{ title }}
         </h1>
 
-        <h2 class="font-bold text-white text-center lg:text-left text-2xl lg:text-3xl my-2 animate-fade-right">
-          {{ subTitle }}
-        </h2>
 
         <p v-for="paragraph in paragraphs"
           class="w-full lg:max-w-md text-center lg:text-left text-white animate-fade-right">
