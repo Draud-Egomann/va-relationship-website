@@ -22,7 +22,7 @@ function startAutoRotate() {
 </script>
 
 <template>
-  <div class="max-w-6xl mx-auto p-8">
+  <div class="max-w-6xl mx-auto p-4 md:p-8">
     <div class="flex flex-wrap justify-center gap-0" :class="{ 'flex-row-reverse': reverse }">
 
       <div class="w-full md:w-1/2">

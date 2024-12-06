@@ -14,7 +14,7 @@ const footerLinks = DataProvider.GetFooterLinks();
 
           <div class="flex flex-col items-center gap-6 mb-6">
             <div
-              class="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap text-dark-grey-900">
+              class="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap px-2">
               <NuxtLink v-for="footerLink in footerLinks" :to="footerLink.url"
                 class="text-gray-700 dark:text-white/70 hover:text-primary2 dark:hover:text-darkSpecial1Dark transition">
                 {{ footerLink.title }}

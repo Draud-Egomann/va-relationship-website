@@ -13,8 +13,8 @@ defineProps<{
         <table class="w-full text-left table-auto min-w-max">
           <thead>
             <tr>
-              <th v-for="(tableHeading, index) in table_data.tableHeadings" :class="{ 'w-40': index != 0 }"
-                class="p-4 border-b border-slate-600 dark:border-slate-200 bg-accent1 dark:bg-darkAccent1Dark">
+              <th v-for="(tableHeading, index) in table_data.tableHeadings" :class="{ 'w-16 md:w-40': index != 0 }"
+                class="p-2 md:p-4 border-b border-slate-600 dark:border-slate-200 bg-accent1 dark:bg-darkAccent1Dark">
                 <p class="font-bold leading-none">
                   {{ tableHeading }}
                 </p>
@@ -23,13 +23,13 @@ defineProps<{
           </thead>
           <tbody>
             <tr v-for="tableRow in table_data.tableRows" class="hover:bg-accent2 dark:hover:bg-darkAccent1Dark/75">
-              <td class="p-4 border-b border-slate-700 dark:border-gray1">
+              <td class="p-2 md:p-4 border-b border-slate-700 dark:border-gray1">
                 <p class="font-semibold">
                   {{ tableRow.model }}
                 </p>
               </td>
               <td v-for="(value, colIndex) in tableRow.data" :key="colIndex"
-                class="p-4 border-b border-slate-700 dark:border-gray1">
+                class="p-2 md:p-4 border-b border-slate-700 dark:border-gray1">
                 <p>
                   {{ value }}
                 </p>
