@@ -58,6 +58,33 @@ const goalCards = [
     "",
   ),
 ]
+
+const mainCards = [
+  new MainCard(
+    "/ai-world",
+    "Grenzen zwischen virtueller & realer Welt",
+    "Zwischen Welten",
+    "Virtuelle Realität und KI schaffen neue Dimensionen. Allgemeine Unterthemen und Fakten über KI sind hier.",
+    "https://picsum.photos/id/679/800/500",
+    "Ein generisches Bild",
+  ),
+  new MainCard(
+    "ai-education/",
+    "Die Zukunft des Lernens",
+    "KI in der Bildung",
+    "Wie KI unsere Bildungssysteme revolutioniert und die Art und Weise, wie wir lernen, verändert.",
+    "https://picsum.photos/id/891/800/500",
+    "Ein generisches Bild", 
+  ),
+  new MainCard(
+    "chatbots/",
+    "Intimität und Beziehungen mit KI",
+    "Bindungen mit KI",
+    "Was passiert, wenn künstliche Intelligenz zu einem wichtigen Teil unserer Beziehungen wird?",
+    "https://picsum.photos/id/520/800/500",
+    "Ein generisches Bild",
+  ),
+]
 </script>
 
 <template>
@@ -99,4 +126,8 @@ const goalCards = [
       </p>
     </div>
   </div>
+
+  <MainCards :title="'Unsere Themengebiete'"
+    :text="'Im Rahmen unserer Arbeit haben wir uns mit verschiedenen Themengebieten auseinandergesetzt. Diese haben wir in drei Kategorien unterteilt.'"
+    :cards="mainCards" />
 </template>
