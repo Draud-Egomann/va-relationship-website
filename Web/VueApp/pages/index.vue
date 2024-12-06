@@ -150,4 +150,6 @@ const mainCards = [
   <MainCards :title="'Unsere Themengebiete'"
     :text="'Im Rahmen unserer Arbeit haben wir uns mit verschiedenen Themengebieten auseinandergesetzt. Diese haben wir in drei Kategorien unterteilt.'"
     :cards="mainCards" />
+
+  <!-- Konzept -->
 </template>
