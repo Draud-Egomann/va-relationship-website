@@ -37,10 +37,10 @@ const technologies = [
 
     <h2 class="text-2xl font-semibold mt-6">Kontaktinformationen</h2>
     <p class="mb-4">
-      Bei Fragen oder Anliegen zum Schutz Ihrer Daten durch uns erreichen Sie uns jederzeit per E-Mail unter
-      <NuxtLink to="mailto:l1rsfg3jo@mozmail.com" class="text-blue-500 underline">
-        l1rsfg3jo{at}mozmail{dot}com
-      </NuxtLink>.
+      Bei Fragen oder Anliegen erreichen Sie uns jederzeit per E-Mail unter
+      <a href="mailto:dominic.luminapath@gmail.com" class="text-blue-500 underline">
+        dominic.luminapath@gmail.com
+      </a>
     </p>
 
     <h2 class="text-2xl font-semibold mt-6">Allgemeine Grundsätze</h2>
@@ -52,19 +52,17 @@ const technologies = [
 
     <h2 class="text-2xl font-semibold mt-6">Personenbezogene Daten</h2>
     <p class="mb-4">
-      Personenbezogene Daten sind Informationen, die dazu genutzt werden können, Ihre Identität zu erfahren. Darunter
-      fallen Informationen wie Ihr Name, Adresse, Postanschrift, Telefonnummer. Informationen, die nicht mit Ihrer
-      Identität in Verbindung gebracht werden (wie zum Beispiel Anzahl der Nutzer der Seite), fallen nicht darunter.
+      Wir erheben keine personenbezogene Daten.
     </p>
 
-    <h2 class="text-2xl font-semibold mt-6">Welche Rechte haben Sie?</h2>
+    <!-- <h2 class="text-2xl font-semibold mt-6">Welche Rechte haben Sie?</h2>
 
     <h3 class="text-xl font-semibold mt-4">Auskunftsrecht</h3>
     <p class="mb-4">
       Sie können jederzeit eine Auskunft über die von uns über Sie gespeicherten Daten verlangen. Wir bitten Sie, Ihr
       Auskunftsgesuch zusammen mit einem Identitätsnachweis an
-      <NuxtLink to="mailto:l1rsfg3jo@mozmail.com" class="text-blue-500 underline">
-        l1rsfg3jo{at}mozmail{dot}com
+      <NuxtLink to="mailto:dominic.luminpath@gmail.com" class="text-blue-500 underline">
+        dominic.luminapath@gmail.com
       </NuxtLink>
       zu senden.
     </p>
@@ -111,7 +109,7 @@ const technologies = [
       Bitte beachten Sie, dass die Ausübung Ihrer Rechte unter Umständen im Konflikt mit vertraglichen Abmachungen
       stehen und entsprechende Auswirkungen auf die Vertragsdurchführung haben kann (z.B. vorzeitige Vertragsauflösung
       oder Kostenfolgen).
-    </p>
+    </p> -->
 
     <h2 class="text-2xl font-semibold mt-6">Cookies und ähnliche Technologien</h2>
 

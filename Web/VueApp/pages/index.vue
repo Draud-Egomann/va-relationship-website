@@ -141,7 +141,7 @@ const mainCards = [
       </h2>
 
       <p class="text-neutral2 dark:text-gray1" :class="{ 'w-3/4 mx-auto': true }">
-        Wir möchten uns bei unserer Expertenperson <b>Herrn Grüter</b> bedanken, dass er diese VA begleitet und uns bei
+        Wir möchten uns bei unserer Expertenperson bedanken, dass er diese VA begleitet und uns bei
         sämtlichen Fragen unterstützt hat.
       </p>
     </div>

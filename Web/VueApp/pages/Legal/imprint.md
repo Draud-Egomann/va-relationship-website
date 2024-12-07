@@ -4,9 +4,9 @@ Zuletzt aktualisiert am: 04.12.2024
 
 ## Verantwortliche Instanz(en)
 
-- Dominic Toksu & Justin Urbanek  
-- Schweiz  
-- **E-Mail:** [l1rsfg3jo{at}mozmail{dot}com](mailto:l1rsfg3jo@mozmail.com)
+- Dominic Toksu & Justin Urbanek
+- Schweiz
+- **E-Mail:** [dominic.luminapath@gmail.com](mailto:dominic.luminpath@gmail.com)
 
 ## Haftungsausschluss
 

@@ -8,8 +8,8 @@
       - Dominic Toksu & Justin Urbanek<br>
       - Schweiz<br>
       - <strong>E-Mail:</strong>
-      <NuxtLink to="mailto:l1rsfg3jo@mozmail.com" class="text-blue-500 underline ml-2">
-        l1rsfg3jo{at}mozmail{dot}com
+      <NuxtLink to="mailto:dominic.luminpath@gmail.com" class="text-blue-500 underline ml-2">
+        dominic.luminapath@gmail.com
       </NuxtLink>
     </p>
 

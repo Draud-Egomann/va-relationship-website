@@ -4,21 +4,21 @@ Zuletzt aktualisiert am: 03.12.2024
 
 ## Kontaktinformationen
 
-Bei Fragen oder Anliegen zum Schutz Ihrer Daten durch uns erreichen Sie uns jederzeit per E-Mail unter [l1rsfg3jo{at}mozmail{dot}com](mailto:l1rsfg3jo@mozmail.com).
+Bei Fragen oder Anliegen erreichen Sie uns unter dieser Adresse [dominic.luminapath@gmail.com](mailto:dominic.luminpath@gmail.com).
 
 ## Allgemeine Grundsätze
 
-Unsere Webseite kann grundsätzlich ohne Registrierung besucht werden. Bei Ihrem Besuch erheben wir Daten nur in dem Umfang, wie es technisch unbedingt notwendig ist, um Ihnen unsere Webseite anzeigen zu können und die Stabilität und Sicherheit zu gewährleisten.
+Unsere Webseite kann grundsätzlich ohne Registrierung besucht werden. Bei Ihrem Besuch erheben wir Daten nur in dem Umfang, wie es technisch unbedingt notwendig ist, um Ihnen unsere Webseite anzeigen zu können und die Stabilität und Sicherheit zu gewährleisten. Wir erheben keine Personenbezogene Daten.
 
 ## Personenbezogene Daten
 
 Personenbezogene Daten sind Informationen, die dazu genutzt werden können, Ihre Identität zu erfahren. Darunter fallen Informationen wie Ihr Name, Adresse, Postanschrift, Telefonnummer. Informationen, die nicht mit Ihrer Identität in Verbindung gebracht werden (wie zum Beispiel Anzahl der Nutzer der Seite), fallen nicht darunter.
 
-## Welche Rechte haben Sie?
+<!-- ## Welche Rechte haben Sie?
 
 ### Auskunftsrecht
 
-Sie können jederzeit eine Auskunft über die von uns über Sie gespeicherten Daten verlangen. Wir bitten Sie, Ihr Auskunftsgesuch zusammen mit einem Identitätsnachweis an [l1rsfg3jo{at}mozmail{dot}com](mailto:l1rsfg3jo@mozmail.com) zu senden.
+Sie können jederzeit eine Auskunft über die von uns über Sie gespeicherten Daten verlangen. Wir bitten Sie, Ihr Auskunftsgesuch zusammen mit einem Identitätsnachweis an [dominic.luminapath@gmail.com](mailto:dominic.luminpath@gmail.com) zu senden.
 
 Sie haben ausserdem das Recht, Ihre Daten in einem gängigen Dateiformat zu erhalten, wenn wir Ihre Daten automatisiert bearbeiten, und wenn:
 
@@ -33,7 +33,7 @@ Die Bearbeitung Ihres Gesuchs unterliegt der gesetzlichen Bearbeitungsfrist von 
 
 Sie haben jederzeit die Möglichkeit, die Löschung oder Berichtigung Ihrer Daten zu verlangen. Wir können das Gesuch abweisen, wenn gesetzliche Vorschriften uns zur längeren bzw. unveränderten Aufbewahrung verpflichten oder ein Erlaubnistatbestand Ihrem Gesuch entgegensteht.
 
-Bitte beachten Sie, dass die Ausübung Ihrer Rechte unter Umständen im Konflikt mit vertraglichen Abmachungen stehen und entsprechende Auswirkungen auf die Vertragsdurchführung haben kann (z.B. vorzeitige Vertragsauflösung oder Kostenfolgen).
+Bitte beachten Sie, dass die Ausübung Ihrer Rechte unter Umständen im Konflikt mit vertraglichen Abmachungen stehen und entsprechende Auswirkungen auf die Vertragsdurchführung haben kann (z.B. vorzeitige Vertragsauflösung oder Kostenfolgen). -->
 
 ## Cookies und ähnliche Technologien
 
