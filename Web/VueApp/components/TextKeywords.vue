@@ -1,5 +1,7 @@
 <script setup lang="ts">
 defineProps<{
+  title: string,
+  text: string,
   texts: {
     text: string,
     keyword: string,
@@ -12,8 +14,7 @@ defineProps<{
 <template>
   <div class="py-20">
     <div class="max-w-4xl mx-auto text-center p-8 md:p-0 mb-12">
-      <Heading :heading-type="2" :title="'Section Title'"
-        :text="'Here is some introductory text for the section, giving an overview of the content below.'" />
+      <Heading :heading-type="2" :title="title" :text="text" />
     </div>
 
     <div class="max-w-6xl mx-auto space-y-8">
