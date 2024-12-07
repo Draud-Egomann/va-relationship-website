@@ -27,7 +27,7 @@ function startAutoRotate() {
 
       <div class="w-full md:w-1/2">
         <img :src="items[currentIndex].imageUrl" alt="Placeholder Image"
-          class="w-full transition duration-500 ease-in-out" />
+          class="w-full transition duration-500 ease-in-out pointer-events-none" />
       </div>
 
       <div class="w-full md:w-1/2 flex flex-col justify-top pt-4 md:pt-0" :class="reverse ? 'md:pr-16' : 'md:pl-16'">
