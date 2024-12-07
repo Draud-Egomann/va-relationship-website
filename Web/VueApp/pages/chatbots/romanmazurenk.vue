@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { mainTextChat, sectionsChat } from '~/composables/text/ai-chatbot';
+import { mainTextRoman, sectionsRoman } from '~/composables/text/roman.js';
 const heroBanner = {
     title: "Seit 9 Jahren tot, durch AI jedoch täglich am schreiben",
     subTitle: "Die neue Intimität",
@@ -15,8 +15,8 @@ const heroBanner = {
     <HeroBanner :title="heroBanner.title" :subTitle="heroBanner.subTitle" :isBigView="heroBanner.isBigView"
         :hasButton="false" :buttonText="null" :paragraphs="heroBanner.paragraphs" @buttonClickEvent="() => { }" />
 
-    <Texts :title="'Allein gelassen von der Welt, findet er Trost in einem Chatbot'" :text=mainTextChat
-        :sections=sectionsChat />
+    <Texts :title="'Allein gelassen von der Welt, findet er Trost in einem Chatbot'" :text=mainTextRoman
+        :sections=sectionsRoman />
     <!-- Einsam, einsamer, ein Chatbot -->
     <!-- Allein gelassen von der Welt, findet er Trost in einem Chatbot -->
     <!-- Ein Herz und Emotionen in Code und Metall? -->

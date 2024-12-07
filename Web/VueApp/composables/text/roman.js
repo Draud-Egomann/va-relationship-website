@@ -1,4 +1,4 @@
-export const mainTextChat = `Roman Mazurenko, ein junger Mann aus Russland, starb 2015 bei 
+export const mainTextRoman = `Roman Mazurenko, ein junger Mann aus Russland, starb 2015 bei 
 einem Unfall. Seine beste Freundin Eugenia Kuyda, tief getroffen 
 vom Verlust, suchte nach einem Weg, weiterhin mit ihm in Kontakt 
 zu bleiben. Sie sammelte alte Nachrichten und Texte von Roman 
@@ -8,7 +8,7 @@ Ausdrucksweise nachahmte. So entstand die erste Version eines
 Bots, der im Wesentlichen darauf ausgelegt war, ihre Erinnerung an 
 Roman wachzuhalten.`;
 
-export const sectionsChat = [
+export const sectionsRoman = [
     {
       title: 'Replika, eine App mit KI',
       text: `Kuyda fand dabei nicht nur Trost, sondern erkannte auch das Potenzial 
