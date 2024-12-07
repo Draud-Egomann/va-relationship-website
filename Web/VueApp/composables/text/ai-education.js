@@ -1,4 +1,4 @@
-export const mainText = `In vielen Schulklassen ist es schon Standard geworden, die KI um Hilfe zu fragen.
+export const mainTextEd = `In vielen Schulklassen ist es schon Standard geworden, die KI um Hilfe zu fragen.
 Bewusst sind sich die Lehrer dem meist nicht und bewerten die Arbeit im Glauben, sie 
 sei durch menschliche Leistung entstanden. Doch welchen Nutzen bietet KI und wo ist 
 ihr Limit?
@@ -8,7 +8,7 @@ stösst man schon auf die ersten Hindernisse. Die Antworten der KI können näml
 sehr schnell falsch sein, obwohl die KI dies zuversichtlich anders behauptet. Dieses 
 Phänomen nennt man „Halluzinieren“ in der digitalen Welt. Doch wie kommt es dazu?`;
 
-export const sections = [
+export const sectionsEd = [
     {
       title: 'KI und denken',
       text: `Eine KI kann grundsätzlich nicht logisch denken wie wir Menschen. Sie wird mit 

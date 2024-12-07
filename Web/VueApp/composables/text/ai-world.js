@@ -1,4 +1,4 @@
-export const mainText = `Künstliche Intelligenz prägt unser Leben. News Artikel werden von KI geschrieben, 
+export const mainTextWorld = `Künstliche Intelligenz prägt unser Leben. News Artikel werden von KI geschrieben, 
 Office Programme bieten eigene KI-Tools und Werbung wird durch KI personalisiert. 
 Dabei möchten wir untersuchen, wie KI uns als Menschen beeinflusst. 
 Unter Künstlicher Intelligenz hat man lange Bots oder Computergegner in Videospielen 
@@ -18,7 +18,7 @@ werden können. Doch auch unsere Politik und sogar unsere zwischenmenschlichen
 Beziehungen werden sich grundlegend verändern. Was uns dabei in Zukunft erwarten 
 wird, und wie wir uns darauf vorbereiten können, möchten wir mit dieser Arbeit zeigen.`;
 
-export const sections = [
+export const sectionsWorld = [
     {
       title: 'Unsere Thesen',
       text: `Wir bemerken in unserem Umfeld, wie sich unsere Mitmenschen immer mehr auf KI in 
