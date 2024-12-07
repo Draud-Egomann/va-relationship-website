@@ -33,11 +33,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseSpaStaticFiles();
 
-// uncomment when nuxt app is ready
-//app.UseSpa(spa =>
-//{
-//    spa.Options.SourcePath = "VueApp";
-//});
+
+app.UseSpa(spa =>
+{
+    spa.Options.SourcePath = "VueApp";
+});
 
 app.UseHttpsRedirection();
 
@@ -47,7 +47,5 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
-app.MapFallbackToFile("/index.html");
 
 app.Run();
