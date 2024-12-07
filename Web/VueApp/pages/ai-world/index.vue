@@ -1,19 +1,21 @@
 <script lang="ts" setup>
+import { mainText, sections } from '~/composables/text/ai-world';
 const heroBanner = {
   title: "Zwischen Welten",
   subTitle: "Die neue Intimität",
-  isBigView: false,
+  isBigView: true,
   paragraphs: [
     "Technologie und Alltag verschmelzen zunehmend zu einer Einheit, die unseren Lebensstil prägt.",
   ],
 }
+
 </script>
 
 <template>
   <HeroBanner :title="heroBanner.title" :subTitle="heroBanner.subTitle" :isBigView="heroBanner.isBigView"
     :hasButton="false" :buttonText="null" :paragraphs="heroBanner.paragraphs" @buttonClickEvent="() => { }" />
 
-
+  <Texts :title="'Zwischen Welten, eine neue Zukunft'" :text=mainText :sections=sections />
   <!-- ChatGPT übertrifft Ärzte? -->
   <!-- Umfragen -->
   <!-- Daisy KI Oma -->
