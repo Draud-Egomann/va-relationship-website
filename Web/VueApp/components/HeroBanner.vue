@@ -9,7 +9,7 @@ const props = defineProps<{
 }>();
 const emits = defineEmits(['buttonClickEvent']);
 
-const height = props.isBigView ? "h-[40vh] md:h-[95vh]" : "h-[40vh]";
+const height = props.isBigView ? "h-[70vh] md:h-[95vh]" : "h-[70vh] md:h-[60vh]";
 
 onNuxtReady(() => {
   if (props.hasButton && stringHelper.IsNullOrEmpty(props.buttonText)) {
@@ -39,7 +39,8 @@ function scrollDown() {
           {{ subTitle }}
         </h2>
 
-        <h1 class="font-extrabold text-white text-center lg:text-left text-3xl lg:text-4xl -mt-4 my-2 animate-fade-right">
+        <h1
+          class="font-extrabold text-white text-center lg:text-left text-3xl lg:text-4xl -mt-4 my-2 animate-fade-right">
           {{ title }}
         </h1>
 
@@ -58,7 +59,7 @@ function scrollDown() {
       </div>
 
       <fa-icon v-if="isBigView" icon="arrow-down" size="2x" @click="scrollDown"
-        class="absolute bottom-6 left-[47%] sm:left-1/2 -translate-x-1/2 text-white cursor-pointer animate-bounce"
+        class="absolute bottom-6 left-[47%] sm:left-1/2 -translate-x-1/2 text-white cursor-pointer animate-bounce !hidden md:block"
         aria-label="Runterscrollen" />
     </div>
   </div>
