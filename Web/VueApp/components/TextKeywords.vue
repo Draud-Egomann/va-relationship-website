@@ -31,7 +31,7 @@ defineProps<{
         </span>
         <span v-else class="w-full md:w-auto mx-auto">
           <img :src="item.image.ImageUrl ?? '~/assets/images/placeholder.jpg'" :alt="item.image.ImageAltText"
-            :class="item.image.ImageClass" class="w-52 h-32 mx-auto" draggable="false" />
+            :class="item.image.ImageClass" class="w-60 mx-auto" draggable="false" />
         </span>
 
       </div>
