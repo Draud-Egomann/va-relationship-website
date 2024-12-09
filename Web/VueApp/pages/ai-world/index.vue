@@ -3,7 +3,7 @@ import { mainTextWorld, sectionsWorld, gptDoctorItems } from '~/composables/text
 const heroBanner = {
   title: "Zwischen Welten",
   subTitle: "Die neue Intimität",
-  isBigView: true,
+  isBigView: false,
   paragraphs: [
     "Technologie und Alltag verschmelzen zunehmend zu einer Einheit, die unseren Lebensstil prägt.",
   ],
