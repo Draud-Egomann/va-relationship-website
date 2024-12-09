@@ -98,7 +98,7 @@ const surveyAnswers: {
   <Texts :title="'Zwischen Welten, eine neue Zukunft'" :text=mainTextWorld :sections=sectionsWorld />
 
   <!--  -->
-  <Blockquote :author="'Eigenes Zitat'">
+  <Blockquote :author="''">
     <p class="font-bold text-neutral2 dark:text-darkNeutral2">
       Eine KI kann berüchtigt falsch liegen, weshalb man ihr bei medizinischen
       Fragen eher mit Vorsicht begegnen sollte, oder?
