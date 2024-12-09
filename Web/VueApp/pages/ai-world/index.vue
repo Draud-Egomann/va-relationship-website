@@ -97,7 +97,6 @@ const surveyAnswers: {
 
   <Texts :title="'Zwischen Welten, eine neue Zukunft'" :text=mainTextWorld :sections=sectionsWorld />
 
-  <!--  -->
   <Blockquote :author="''">
     <p class="font-bold text-neutral2 dark:text-darkNeutral2">
       Eine KI kann berüchtigt falsch liegen, weshalb man ihr bei medizinischen
@@ -107,12 +106,15 @@ const surveyAnswers: {
 
   <!-- ChatGPT übertrifft Ärzte? -->
   <MainSection :items="gptDoctorItems" :reverse="false" />
+
   <!-- Umfragen -->
   <TextKeywords :title="'Umfragen'"
     :text="'Wir haben eine Umfrage erstellt, um Meinungen und Einsichten zu unseren Thesen und Zielen zu sammeln. Dabei teilen wir die Umfrage auf Plattformen wie Subreddits, LinkedIn und an Schulklassen, um möglichst vielfältige Rückmeldungen zu erhalten. Von den 21 Fragen des Formulars haben wir ein Drittel ausgewählt und werten diese entsprechend unseren Thesen aus.'"
     :texts="surveyAnswers" :has-keyword="false" />
+
   <!-- Daisy KI Oma -->
   <!-- Ethisches Dilemma -->
   <!-- «Her» ein Film der die Zukunft vorausgesagt hat -->
   <!-- KIs «vergiften» -->
+  <div id="nightshade"></div>
 </template>
