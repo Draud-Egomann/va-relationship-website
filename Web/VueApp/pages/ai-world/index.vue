@@ -11,11 +11,12 @@ const heroBanner = {
 
 const surveyAnswers: {
   text: string;
+  specialText?: string;
   keyword: string;
   image: ImageBaseItem;
 }[] = [
     {
-    text: "KI wird vor allem für Arbeit, Nachforschungen und überraschend häufig aus Interesse oder als Hobby genutzt. Das deutet darauf hin, dass KI nicht nur ein Werkzeug aus Zwang, sondern aus echtem Interesse verwendet wird.",
+      text: "KI wird vor allem für Arbeit, Nachforschungen und überraschend häufig aus Interesse oder als Hobby genutzt. Das deutet darauf hin, dass KI nicht nur ein Werkzeug aus Zwang, sondern aus echtem Interesse verwendet wird.",
       keyword: "",
       image: new ImageBaseItem(
         "survey1.jpg",
@@ -79,7 +80,8 @@ const surveyAnswers: {
       ),
     },
     {
-      text: "Die Ergebnisse zeigen, dass die Mehrheit der Antwortenden aus dem Informatikbereich kommt.Das überrascht wenig, da ein Grossteil der BBZW- Klassen Informatiker umfasst.Klar, wer könnte zur Künstlichen Intelligenz mehr sagen als diejenigen, die täglich mit der Technik arbeiten.Auch freut uns, dass unsere Umfrage sogar ausserhalb unserer Kreise gesehen wurde - etwa im Rechtswesen. Besonders amüsant finden wir die Antwort des Minecraft - Experten und Platin Spielers in League of Legends.Die Meinung dieses Teilnehmers schätzen wir ganz besonders.",
+      text: "Die Ergebnisse zeigen, dass die Mehrheit der Antwortenden aus dem Informatikbereich kommt. Das überrascht wenig, da ein Grossteil der BBZW- Klassen Informatiker umfasst. Klar, wer könnte zur Künstlichen Intelligenz mehr sagen als diejenigen, die täglich mit der Technik arbeiten. Auch freut uns, dass unsere Umfrage sogar ausserhalb unserer Kreise gesehen wurde - etwa im Rechtswesen.",
+      specialText: "Besonders amüsant finden wir die Antwort des Minecraft Experten und Platin Spielers in Legaue of Legendes. Auf diese Perspektive kann man ja kaum verzichten. Diese Meinung schätzen wir ganz besonders.",
       keyword: "Teilnehmerprofile",
       image: new ImageBaseItem(
         "survey9.jpg",

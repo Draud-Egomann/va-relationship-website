@@ -4,6 +4,7 @@ defineProps<{
   text: string,
   texts: {
     text: string,
+    specialText?: string,
     keyword: string,
     image: ImageBaseItem,
   }[]
@@ -23,6 +24,11 @@ defineProps<{
         <p
           class="text-neutral2 dark:text-darkNeutral2 text-lg mb-4 w-full md:w-3/4 p-8 md:p-0 text-center md:text-left mx-auto">
           {{ item.text }}
+          <span v-if="!stringHelper.IsNullOrEmpty(item.specialText ?? '')"
+            id="platin"
+            class="text-neutral2 dark:text-darkNeutral2 text-lg inline-block border-l-4 border-red-600 pl-2 -ml-3 italic">
+            {{ item.specialText }}
+          </span>
         </p>
 
         <span v-if="hasKeyword"
