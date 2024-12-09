@@ -89,6 +89,9 @@ const surveyAnswers: {
       ),
     }
   ]
+
+const dText = `
+Daisy ist eine charmate ältere Dame, welche öfters bei Gesprächen mit "Supportern" den faden verliert. Die Idee für Daisy kam dem britischen Anbieter O2, um Telefonbetrügern ihre Zeit zu steheln und echte Opfer zu schützen. Ihre Persönlichkeit ist perfekt auf das Klischee einer gutgläubigen, freundlichen Seniorin zugeschnitten, die ausgiebig von Strickprojekten und Familiengeschichten erzählt. Daisy kann beliebig viele Betrüger gleichzeitig hinhalten, ohne jemals müde zu werden. Mit Rückfragen und absichtlichem Missverstehen dehnt sie die Gespräche oft über 40 Minuten aus, bis die Betrüger frustriert auflegen.`;
 </script>
 
 <template>
@@ -113,6 +116,21 @@ const surveyAnswers: {
     :texts="surveyAnswers" :has-keyword="false" />
 
   <!-- Daisy KI Oma -->
+  <div class="max-w-6xl mx-auto p-8">
+    <div class="py-24 text-center">
+      <Heading :heading-type="2" :title="'KI-Oma treibt Telefonnbetrüger in den Wahnsinn'" :text="dText"
+        :text-reduced-size="true" />
+    </div>
+
+    <!-- video container -->
+    <div class="flex justify-center gap-8">
+      <iframe src="https://www.youtube.com/embed/RV_SdCfZ-0s" class="w-full h-[80vh] object-cover mx-auto"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
   <!-- Ethisches Dilemma -->
   <!-- «Her» ein Film der die Zukunft vorausgesagt hat -->
   <!-- KIs «vergiften» -->
