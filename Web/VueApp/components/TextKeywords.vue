@@ -30,8 +30,8 @@ defineProps<{
           {{ item.keyword }}
         </span>
         <span v-else class="w-full md:w-auto mx-auto">
-          <img :src="item.image.ImageUrl ?? '~/assets/images/placeholder.jpg'" :alt="item.image.ImageAltText"
-            :class="item.image.ImageClass" class="w-60 mx-auto" draggable="false" />
+          <Image :src="item.image.ImageUrl ?? '~/assets/images/placeholder.jpg'" :alt="item.image.ImageAltText"
+            :class="item.image.ImageClass" class="w-4/5 md:w-60 mx-auto" />
         </span>
 
       </div>
