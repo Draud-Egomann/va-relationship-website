@@ -3,13 +3,13 @@ import { useDarkModeStore } from "~/store/DarkModeStore"
 
 const darkModeStore = useDarkModeStore();
 const links = DataProvider.GetHeaderLinks();
-const dropdown = ref<string | null>(null);
+// const dropdown = ref<string | null>(null); // Commented out dropdown
 const isMobileMenuOpen = ref(false);
 const isHeaderVisible = ref(true);
 
-function toggleDropdown(linkName: string) {
-  dropdown.value = dropdown.value === linkName ? null : linkName;
-}
+// function toggleDropdown(linkName: string) {
+//   dropdown.value = dropdown.value === linkName ? null : linkName;
+// } // Commented out toggleDropdown
 
 function toggleMobileMenu() {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;
@@ -21,7 +21,7 @@ function handleScroll() {
   const currentScrollY = window.scrollY;
   if (currentScrollY > lastScrollY && currentScrollY > 50) {
     isHeaderVisible.value = false; // Hide header on scroll down
-    dropdown.value = null; // Close dropdown on scroll
+    // dropdown.value = null; // Close dropdown on scroll (Commented out)
   } else {
     isHeaderVisible.value = true; // Show header on scroll up
   }
@@ -32,22 +32,22 @@ function handleClickOutside(event: MouseEvent) {
   const target = event.target as HTMLElement;
 
   // Check if the click is outside dropdown or toggle button
-  const dropdownMenus = document.querySelectorAll('.dropdown-menu, .dropdown-toggle');
-  const clickedInsideDropdown = Array.from(dropdownMenus).some(el => el.contains(target));
+  // const dropdownMenus = document.querySelectorAll('.dropdown-menu, .dropdown-toggle');
+  // const clickedInsideDropdown = Array.from(dropdownMenus).some(el => el.contains(target));
 
-  if (!clickedInsideDropdown) {
-    dropdown.value = null; // Close dropdown
-  }
+  // if (!clickedInsideDropdown) {
+  //   dropdown.value = null; // Close dropdown
+  // } // Commented out dropdown logic
 }
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
-  window.addEventListener('click', handleClickOutside);
+  // window.addEventListener('click', handleClickOutside); // Commented out dropdown event
 });
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
-  window.removeEventListener('click', handleClickOutside);
+  // window.removeEventListener('click', handleClickOutside); // Commented out dropdown event
 });
 </script>
 
@@ -69,6 +69,8 @@ onUnmounted(() => {
             {{ link.title }}
           </NuxtLink>
 
+          <!-- Commented out dropdown for desktop -->
+          <!--
           <div v-if="link.sublinks.length > 0">
             <button @click="toggleDropdown(link.title)"
               class="ml-2 text-neutral2 dark:text-neutral1 focus:outline-none dropdown-toggle">
@@ -86,6 +88,7 @@ onUnmounted(() => {
               </NuxtLink>
             </ul>
           </div>
+          -->
         </li>
       </ul>
 
@@ -112,14 +115,19 @@ onUnmounted(() => {
               class="flex-1 text-left text-neutral2 dark:text-neutral1 hover:bg-accent1 dark:hover:bg-primary1 px-4 py-2 rounded transition duration-300">
               {{ link.title }}
             </NuxtLink>
+
+            <!-- Commented out dropdown for mobile -->
+            <!--
             <button @click="toggleDropdown(link.title)"
               class="ml-2 text-neutral2 dark:text-neutral1 focus:outline-none pr-4 md:pr-0">
               <fa-icon :icon="['fas', 'chevron-down']" class="transition"
                 :class="{ 'rotate-180': dropdown == link.title }" />
             </button>
+            -->
           </div>
 
           <!-- Mobile Dropdown -->
+          <!--
           <ul v-if="dropdown === link.title"
             class="w-full mt-2 bg-gray-100 dark:bg-gray-700 text-black dark:text-white rounded-md">
             <li v-for="sublink in link.sublinks" :key="sublink"
@@ -127,6 +135,7 @@ onUnmounted(() => {
               <a href="#">{{ sublink }}</a>
             </li>
           </ul>
+          -->
         </li>
       </ul>
     </div>
