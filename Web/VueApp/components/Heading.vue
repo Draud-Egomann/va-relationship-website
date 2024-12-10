@@ -34,7 +34,7 @@ onMounted(() => {
   <h6 v-if="props.headingType == 6" class="text-neutral2 dark:text-darkNeutral2 my-0">
     {{ title }}
   </h6>
-  <p class="text-neutral2 dark:text-gray1" :class="{ 'w-3/4 mx-auto': textReducedSize }">
+  <p class="text-neutral2 dark:text-gray1" :class="{ 'w-full md:w-3/4 mx-auto': textReducedSize }">
     {{ text }}
   </p>
 </template>
