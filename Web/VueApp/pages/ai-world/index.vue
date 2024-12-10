@@ -166,7 +166,7 @@ const poisonAiText: {
   <div id="nightshade">
     <TextKeywords :title="'KIs «vergiften»'"
       :text="'Ein Tool, entwicklet von Forschern an der Universität von Chicago, dass Bilder auf pixelgenauer Ebene für die «Augen» einer KI «verhunzt».'"
-      :texts="poisonAiText" :has-keyword="true" />
+      :texts="poisonAiText" :has-keyword="true" class="py-0" />
 
     <div class="max-w-6xl mx-auto space-y-8">
       <div class="flex flex-wrap justify-between items-center">
