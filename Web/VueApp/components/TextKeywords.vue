@@ -6,7 +6,7 @@ defineProps<{
     text: string,
     specialText?: string,
     keyword: string,
-    image: ImageBaseItem,
+    image?: ImageBaseItem,
   }[]
   hasKeyword: boolean,
 }>()
@@ -31,7 +31,7 @@ defineProps<{
           </span>
         </p>
 
-        <span v-if="hasKeyword"
+        <span v-if="hasKeyword && item.image == null"
           class="font-extrabold text-xl mb-8 w-full lg:w-1/4 text-center lg:text-right text-shadow-outline shadow-special1 dark:shadow-darkSpecial1Dark">
           {{ item.keyword }}
         </span>

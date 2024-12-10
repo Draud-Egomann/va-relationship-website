@@ -92,6 +92,35 @@ const surveyAnswers: {
 
 const dText = `
 Daisy ist eine charmate ältere Dame, welche öfters bei Gesprächen mit "Supportern" den faden verliert. Die Idee für Daisy kam dem britischen Anbieter O2, um Telefonbetrügern ihre Zeit zu steheln und echte Opfer zu schützen. Ihre Persönlichkeit ist perfekt auf das Klischee einer gutgläubigen, freundlichen Seniorin zugeschnitten, die ausgiebig von Strickprojekten und Familiengeschichten erzählt. Daisy kann beliebig viele Betrüger gleichzeitig hinhalten, ohne jemals müde zu werden. Mit Rückfragen und absichtlichem Missverstehen dehnt sie die Gespräche oft über 40 Minuten aus, bis die Betrüger frustriert auflegen.`;
+
+const poisonAiText: {
+  text: string;
+  specialText?: string;
+  keyword: string;
+  image?: ImageBaseItem;
+}[] = [
+    {
+      "text": "Nightshade ist ein Tool, das Künstlern ermöglicht, ihre Werke vor ungefragtem KI-Training zu schützen. Es verändert Bilder auf pixelgenauer Ebene, sodass KI-Systeme die Inhalte fehlerhaft interpretieren, während sie für die Menschen (beinahe) unverändert bleiben. So könnten ein Hund als Katze oder ein Auto als Kuh interpretiert werden.",
+      "keyword": "KI-Schutz"
+    },
+    {
+      "text": "KI-Modelle ignorieren Opt-out-Listen, was Rechteinhaber daran hindert, ihre Werke vor ungefragtem Training zu schützen. Nightshade erhöht die Kosten für unerlaubtes Datentraining, indem es Modelle dazu bringt, abweichende Verhaltensweisen zu lernen.",
+      "keyword": "Urheberrecht"
+    },
+    {
+      "text": "Nightshade funktioniert ähnlich wie seine Vorversion Glaze, ist aber im Gegensatz offensiv. Gezielt werden generative Modelle sabotiert.",
+      "keyword": "Offensive Schutz"
+    },
+    {
+      "text": "Die Effekte von Nightshade bleiben selbst bei Bildbearbeitungen wie Zuschneiden, Komprimieren oder Rauschanpassungen erhalten.",
+      "keyword": "Robustheit"
+    },
+    {
+      "text": "Nightshade wird zusammen mit Glaze getestet und könnte in Zukunft als Add-on für Webglaze veröffentlicht werden. Während Glaze Schutz vor Stilkopien bietet, manipuliert Nightshade gezielt KI-Trainingsdaten.",
+      "keyword": "Tool-Integration"
+    }
+  ]
+
 </script>
 
 <template>
@@ -134,5 +163,25 @@ Daisy ist eine charmate ältere Dame, welche öfters bei Gesprächen mit "Suppor
   <!-- Ethisches Dilemma -->
   <!-- «Her» ein Film der die Zukunft vorausgesagt hat -->
   <!-- KIs «vergiften» -->
-  <div id="nightshade"></div>
+  <div id="nightshade">
+    <TextKeywords :title="'KIs «vergiften»'"
+      :text="'Ein Tool, entwicklet von Forschern an der Universität von Chicago, dass Bilder auf pixelgenauer Ebene für die «Augen» einer KI «verhunzt».'"
+      :texts="poisonAiText" :has-keyword="true" />
+
+    <div class="max-w-6xl mx-auto space-y-8">
+      <div class="flex flex-wrap justify-between items-center">
+
+        <p
+          class="text-neutral2 dark:text-darkNeutral2 text-lg mb-4 w-full md:w-3/4 p-8 md:p-0 text-center md:text-left mx-auto">
+          Das bild ist ein Beispiel, was passiert, wenn KI-Modelle vergiftet werden.
+        </p>
+
+        <span class="w-full md:w-auto mx-auto">
+          <Image src="/ai-poison.jpg" alt="" class="w-4/5 md:w-60 mx-auto" />
+        </span>
+
+      </div>
+    </div>
+
+  </div>
 </template>
