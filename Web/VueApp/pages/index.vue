@@ -140,7 +140,7 @@ const mainCards = [
         Dank
       </h2>
 
-      <p class="text-neutral2 dark:text-gray1" :class="{ 'w-3/4 mx-auto': true }">
+      <p class="text-neutral2 dark:text-gray1" :class="{ 'w-full md:w-3/4 mx-auto': true }">
         Wir möchten uns bei unserer Expertenperson bedanken, dass er diese VA begleitet und uns bei
         sämtlichen Fragen unterstützt hat.
       </p>
@@ -150,6 +150,4 @@ const mainCards = [
   <MainCards :title="'Unsere Themengebiete'"
     :text="'Im Rahmen unserer Arbeit haben wir uns mit verschiedenen Themengebieten auseinandergesetzt. Diese haben wir in drei Kategorien unterteilt.'"
     :cards="mainCards" />
-
-  <!-- Konzept -->
 </template>

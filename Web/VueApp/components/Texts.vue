@@ -21,9 +21,8 @@ defineProps<{
           {{ section.title }}
         </h4>
         <p class="text-base text-gray-700 dark:text-gray1 w-full md:max-w-[80%]"
-          :class="index % 2 === 0 ? 'md:text-left text-center' : 'md:text-right text-center'">
-          {{ section.text }}
-        </p>
+          :class="index % 2 === 0 ? 'md:text-left text-center' : 'md:text-right text-center'"
+          v-html="breakPointHelper.formatText(section.text, 3)"></p>
       </div>
     </div>
   </div>

@@ -142,7 +142,7 @@ const poisonAiText: {
   <!-- Umfragen -->
   <TextKeywords :title="'Umfragen'"
     :text="'Wir haben eine Umfrage erstellt, um Meinungen und Einsichten zu unseren Thesen und Zielen zu sammeln. Dabei teilen wir die Umfrage auf Plattformen wie Subreddits, LinkedIn und an Schulklassen, um möglichst vielfältige Rückmeldungen zu erhalten. Von den 21 Fragen des Formulars haben wir ein Drittel ausgewählt und werten diese entsprechend unseren Thesen aus.'"
-    :texts="surveyAnswers" :has-keyword="false" />
+    :texts="surveyAnswers" :has-keyword="false" :textSplitCount="2" />
 
   <!-- Daisy KI Oma -->
   <div class="max-w-6xl mx-auto p-4 md:p-8">

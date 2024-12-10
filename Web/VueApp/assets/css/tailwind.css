@@ -8,19 +8,19 @@
 }
 
 h1 {
-  @apply text-5xl md:text-6xl font-bold text-neutral2 roboto-bold;
+  @apply text-4xl md:text-6xl font-bold text-neutral2 roboto-bold;
 }
 
 h2 {
-  @apply text-4xl md:text-5xl font-bold text-neutral2 roboto-bold;
+  @apply text-3xl md:text-5xl font-bold text-neutral2 roboto-bold;
 }
 
 h3 {
-  @apply text-3xl md:text-4xl font-bold text-neutral2 roboto-bold;
+  @apply text-2xl md:text-4xl font-bold text-neutral2 roboto-bold;
 }
 
 h4 {
-  @apply text-2xl md:text-3xl font-bold text-neutral2 roboto-bold;
+  @apply text-xl md:text-3xl font-bold text-neutral2 roboto-bold;
 }
 
 h5 {
