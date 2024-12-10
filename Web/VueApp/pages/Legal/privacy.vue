@@ -1,4 +1,9 @@
 <script lang="ts" setup>
+
+const isMobile = computed(() => {
+  return window.innerWidth < 768;
+});
+
 const technologies = [
   {
     name: 'Font Awesome',
@@ -32,8 +37,8 @@ const technologies = [
 
 <template>
   <div class="max-w-6xl mx-auto p-8 pt-32">
-    <h1 class="text-4xl font-bold mb-4">Datenschutzerklärung</h1>
-    <p class="mb-4">Zuletzt aktualisiert am: 03.12.2024</p>
+    <h1 class="text-4xl font-bold mb-4">{{ !isMobile ? 'Datenschutzerklärung' : 'Datenschutz'}}</h1>
+    <p class="mb-4">Zuletzt aktualisiert am: 07.12.2024</p>
 
     <h2 class="text-2xl font-semibold mt-6">Kontaktinformationen</h2>
     <p class="mb-4">

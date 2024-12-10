@@ -6,13 +6,30 @@ const props = defineProps<{
   textReducedSize?: boolean
 }>()
 
+const formattedText = computed(() => {
+  const sentences = props.text.split('.');
+  let result = '';
+
+  for (let i = 0; i < sentences.length; i++) {
+    const sentence = sentences[i].trim();
+    if (sentence) {
+      result += sentence + '.';
+
+      if ((i + 1) % 3 === 0 && i < sentences.length - 1) {
+        result += '<br/><br/>';
+      }
+    }
+  }
+  return result;
+});
+
 onMounted(() => {
   const headingType = Number(props.headingType);
 
   if (isNaN(headingType) || headingType > 6 || headingType < 1) {
     console.error('Invalid heading type:', props.headingType);
   }
-})
+});
 </script>
 
 <template>
@@ -34,7 +51,6 @@ onMounted(() => {
   <h6 v-if="props.headingType == 6" class="text-neutral2 dark:text-darkNeutral2 my-0">
     {{ title }}
   </h6>
-  <p class="text-neutral2 dark:text-gray1" :class="{ 'w-full md:w-3/4 mx-auto': textReducedSize }">
-    {{ text }}
-  </p>
+  <p class="text-neutral2 dark:text-gray1" :class="{ 'w-full md:w-3/4 mx-auto': textReducedSize }"
+    v-html="formattedText"></p>
 </template>

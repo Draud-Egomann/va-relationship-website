@@ -134,7 +134,7 @@ const mainCards = [
 
   <div class="w-3/4 mx-auto border border-gray1/20 mt-8"></div>
 
-  <div class="max-w-6xl mx-auto p-8">
+  <div class="max-w-6xl mx-auto p-4 md:p-8">
     <div class="text-center mb-8">
       <h2 class="text-special1 dark:text-darkSpecial1Dark my-6">
         Dank

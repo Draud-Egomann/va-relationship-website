@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="max-w-6xl mx-auto p-8">
+  <div class="max-w-6xl mx-auto p-4 md:p-8">
     <div class="py-24 text-center">
       <Heading :heading-type="2" :title="title" :text="text" :text-reduced-size="true" />
     </div>

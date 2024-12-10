@@ -1,22 +1,4 @@
-export const mainTextWorld = `Künstliche Intelligenz prägt unser Leben. News Artikel werden von KI geschrieben, 
-Office Programme bieten eigene KI-Tools und Werbung wird durch KI personalisiert. 
-Dabei möchten wir untersuchen, wie KI uns als Menschen beeinflusst. 
-Unter Künstlicher Intelligenz hat man lange Bots oder Computergegner in Videospielen 
-verstanden. Diese haben sich aber meist an einen festen Ablauf, einen Algorithmus 
-gehalten. Die KI von heute kann jedoch menschliches Denken imitieren und bei 
-gleichem Input auf verschiedene Lösungen gelangen.
-
-Im Internet sind zahlreiche Chatmodelle wie ChatGPT kostenlos zu finden. Dabei muss 
-man nur einen Account erstellen und kann seine Aufgaben oder Probleme per Chat an 
-ein KI-Tool stellen. Diese Tools verstehen diesen Input und geben eine 
-menschenähnliche Antwort zurück. Dabei sind diese Tools in der Lage, komplexe 
-mathematische und literarische Aufgaben zu lösen.
-
-Dies ist besonders im Bildungswesen ein Problem, wenn bereits früh in der 
-Grundschule Prüfungen und Hausaufgaben automatisch durch solche Tools gelöst 
-werden können. Doch auch unsere Politik und sogar unsere zwischenmenschlichen 
-Beziehungen werden sich grundlegend verändern. Was uns dabei in Zukunft erwarten 
-wird, und wie wir uns darauf vorbereiten können, möchten wir mit dieser Arbeit zeigen.`;
+export const mainTextWorld = `Künstliche Intelligenz (KI) prägt zunehmend unser Leben: News, Office-Tools und personalisierte Werbung basieren oft auf KI. Während frühe KI-Systeme wie Videospiel-Bots festen Abläufen folgten, imitieren moderne KI-Modelle menschliches Denken und finden unterschiedliche Lösungen für denselben Input. Kostenlose Tools wie ChatGPT ermöglichen, Aufgaben und Probleme effizient per Chat zu lösen, von Mathematik bis Literatur. Dies birgt Herausforderungen, etwa im Bildungswesen, wo Schüler Hausaufgaben automatisiert lösen können. Auch Politik und zwischenmenschliche Beziehungen könnten sich durch KI grundlegend verändern. Diese Arbeit beleuchtet, wie KI uns beeinflusst und wie wir uns darauf vorbereiten können.`;
 
 export const sectionsWorld = [
   {

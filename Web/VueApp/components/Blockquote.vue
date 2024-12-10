@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="max-w-6xl mx-auto p-8 py-20">
+  <div class="max-w-6xl mx-auto p-4 md:p-8 py-20">
     <blockquote
       class="relative text-neutral2 dark:text-darkNeutral2 text-center text-lg p-10 w-full m-1 blockquote-corners">
 

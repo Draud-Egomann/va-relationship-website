@@ -40,7 +40,7 @@ function scrollDown() {
         </h2>
 
         <h1
-          class="font-extrabold text-white text-center lg:text-left text-3xl lg:text-4xl -mt-4 my-2 animate-fade-right">
+          class="font-extrabold text-white text-center lg:text-left text-2xl lg:text-4xl -mt-4 my-2 animate-fade-right">
           {{ title }}
         </h1>
 

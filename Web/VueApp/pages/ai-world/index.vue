@@ -145,7 +145,7 @@ const poisonAiText: {
     :texts="surveyAnswers" :has-keyword="false" />
 
   <!-- Daisy KI Oma -->
-  <div class="max-w-6xl mx-auto p-8">
+  <div class="max-w-6xl mx-auto p-4 md:p-8">
     <div class="py-24 text-center">
       <Heading :heading-type="2" :title="'KI-Oma treibt Telefonnbetrüger in den Wahnsinn'" :text="dText"
         :text-reduced-size="true" />

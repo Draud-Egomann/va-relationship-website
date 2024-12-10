@@ -63,15 +63,12 @@ function formatTime(seconds: number) {
 </script>
 
 <template>
-  <div class="max-w-6xl mx-auto p-8">
+  <div class="max-w-6xl mx-auto p-4 md:p-8">
     <div
       class="bg-accent2 border-slate-100 dark:bg-darkAccent2Dark dark:border-slate-500 border-b rounded-t-xl p-4 pb-6 sm:p-10 sm:pb-8 lg:p-6 xl:p-10 xl:pb-8 space-y-6 sm:space-y-8 lg:space-y-6 xl:space-y-8 items-center">
       <div class="flex items-center space-x-4">
-        <img
-          :src="audioPlayer.ImageUrl ?? '~/assets/images/placeholder.jpg'"
-          :alt="audioPlayer.ImageAltText" width="80" height="80" 
-          :class="audioPlayer.ImageClass"
-          class="flex-none rounded-lg bg-slate-100" loading="lazy" />
+        <img :src="audioPlayer.ImageUrl ?? '~/assets/images/placeholder.jpg'" :alt="audioPlayer.ImageAltText" width="80"
+          height="80" :class="audioPlayer.ImageClass" class="flex-none rounded-lg bg-slate-100" loading="lazy" />
 
         <div class="min-w-0 flex-auto space-y-1 font-semibold">
           <h3 class="text-neutral2/75 dark:text-neutral1 text-sm leading-6 truncate">
