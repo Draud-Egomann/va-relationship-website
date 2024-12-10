@@ -15,12 +15,13 @@ defineProps<{
     <div class="space-y-8">
       <div v-for="(section, index) in sections" :key="index" :class="[
         'flex flex-col space-y-4',
-        index % 2 === 0 ? 'items-start' : 'items-end'
+        index % 2 === 0 ? 'md:items-start items-center' : 'md:items-end items-center'
       ]">
-        <h4 class="text-primary1/80 dark:text-darkPrimary1Dark/80">
+        <h4 class="text-primary1/80 dark:text-darkPrimary1Dark/80 text-center md:text-left">
           {{ section.title }}
         </h4>
-        <p class="text-base text-gray-700 dark:text-gray1 max-w-[80%]" :class="index % 2 === 0 ? 'text-left' : 'text-right'">
+        <p class="text-base text-gray-700 dark:text-gray1 w-full md:max-w-[80%]"
+          :class="index % 2 === 0 ? 'md:text-left text-center' : 'md:text-right text-center'">
           {{ section.text }}
         </p>
       </div>
