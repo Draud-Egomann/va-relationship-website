@@ -160,20 +160,18 @@ const poisonAiText: {
     </div>
   </div>
 
-  <!-- Ethisches Dilemma -->
-  <!-- «Her» ein Film der die Zukunft vorausgesagt hat -->
   <!-- KIs «vergiften» -->
   <div id="nightshade">
     <TextKeywords :title="'KIs «vergiften»'"
       :text="'Ein Tool, entwicklet von Forschern an der Universität von Chicago, dass Bilder auf pixelgenauer Ebene für die «Augen» einer KI «verhunzt».'"
       :texts="poisonAiText" :has-keyword="true" class="py-0" />
 
-    <div class="max-w-6xl mx-auto space-y-8">
+    <div class="max-w-6xl mx-auto space-y-8 mt-4 md:mt-0">
       <div class="flex flex-wrap justify-between items-center">
 
         <p
-          class="text-neutral2 dark:text-darkNeutral2 text-lg mb-4 w-full md:w-3/4 p-8 md:p-0 text-center md:text-left mx-auto">
-          Das bild ist ein Beispiel, was passiert, wenn KI-Modelle vergiftet werden.
+          class="text-neutral2 dark:text-darkNeutral2 text-base md:text-lg mb-4 w-full md:w-3/4 px-4 md:px-8 md:p-0 text-center md:text-left mx-auto">
+          Das Bild ist ein Beispiel, was passiert, wenn KI-Modelle vergiftet werden.
         </p>
 
         <span class="w-full md:w-auto mx-auto">
