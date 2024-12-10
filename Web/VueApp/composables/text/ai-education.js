@@ -26,7 +26,7 @@ Generation nicht genug gebildet ist, um diese Probleme anzugehen`
       title: 'Das menschliche Gehirn',
       text: `Es gibt bereits KI-Modelle, die das neurale Netzwerk des Gehirns nachstellen sollen, 
 sogenannte künstliche neuronale Netzwerke. Doch auch diese bringen 
-Herausforderungen mit sich. Auch Lehrpläne müssen angepasst werden. MultipleChoice-Aufgaben stellen kaum noch eine Herausforderung für moderne Modelle dar.
+Herausforderungen mit sich. Auch Lehrpläne müssen angepasst werden. Multiple-Choice-Aufgaben stellen kaum noch eine Herausforderung für moderne Modelle dar.
 Stattdessen sollten Aufgaben das kritische Denken fördern. Wissensfragen verlieren 
 an Bedeutung; eigene Lösungsansätze werden wichtiger. Dies führt zu einer stärkeren 
 Belastung der Schüler durch den höheren Schwierigkeitsgrad.`
@@ -35,8 +35,7 @@ Belastung der Schüler durch den höheren Schwierigkeitsgrad.`
       title: 'Dilemma der Lehrer',
       text: `Ein Bericht beschreibt, wie Lehrer zunehmend mündlichen Prüfungen nutzen, um 
 Kompetenzen zu prüfen. Diese sind zwar aufwendiger, verhindern jedoch Schummeln 
-und sichern das Wissen der Schüler (1)
-Die KI hat grosses Potenzial beim personalisierten Lernen. Sie kann schnell Feedback 
+und sichern das Wissen der Schüler. Die KI hat grosses Potenzial beim personalisierten Lernen. Sie kann schnell Feedback 
 geben und bei Lernproblemen helfen, wenn die Lehrkraft nicht verfügbar ist. Auch gibt 
 es vielleicht Fragen, die man sich nicht traut, der Klasse zu stellen. Wichtig sind hierbei 
 ein gesundes Misstrauen und ein Faktencheck, ob die Antwort wirklich relevant ist.
