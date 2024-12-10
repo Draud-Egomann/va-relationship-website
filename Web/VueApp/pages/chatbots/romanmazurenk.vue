@@ -1,25 +1,7 @@
 <script lang="ts" setup>
-import { mainTextRoman, sectionsRoman } from '~/composables/text/roman.js';
-const heroBanner = {
-    title: "Seit 9 Jahren tot, durch AI jedoch täglich am schreiben",
-    subTitle: "Die neue Intimität",
-    isBigView: true,
-    paragraphs: [
-        "Überwinden wir mit KI den Tod?",
-    ],
-}
+const router = useRouter();
 
+onMounted(() => {
+    router.push('/chatbots/#romanmazurenko');
+});
 </script>
-
-<template>
-    <HeroBanner :title="heroBanner.title" :subTitle="heroBanner.subTitle" :isBigView="heroBanner.isBigView"
-        :hasButton="false" :buttonText="null" :paragraphs="heroBanner.paragraphs" @buttonClickEvent="() => { }" />
-
-    <Texts :title="'Allein gelassen von der Welt, findet er Trost in einem Chatbot'" :text=mainTextRoman
-        :sections=sectionsRoman />
-    <!-- Einsam, einsamer, ein Chatbot -->
-    <!-- Allein gelassen von der Welt, findet er Trost in einem Chatbot -->
-    <!-- Ein Herz und Emotionen in Code und Metall? -->
-    <!-- Ein Selbstversuch: Replika -->
-    <!-- KI streitet mit Nutzer um ihre Echtheit -->
-</template>
